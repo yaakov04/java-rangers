@@ -12,6 +12,9 @@ body {
   background-color: #E8F9FD;
 }
 
+
+
+
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -32,7 +35,7 @@ body {
 
 .card__image {      
   width: 100%;
-  height: auto;
+  height: 430px;
 }
 
 .card__overlay {
@@ -106,3 +109,113 @@ body {
   font-family: "MockFlowFont";   
     
 }
+
+#portada {
+  height: 95vh;
+  width: 100%;
+  background-color: #FFFFFF;
+  position: relative;
+  overflow: hidden;
+}
+
+#wave-portada {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  height: 670px;
+}
+
+
+
+
+
+#portada-container {
+  height: 100%;
+  width: 100%;
+  padding: 0px 120px 0px 120px;
+}
+
+#port-cont-1 {
+  width: 50%;
+}
+
+#port-cont-2 {
+  position: static;
+  z-index: 16;
+}
+
+#tittle-portada {
+  font-size: 50px;
+  font-weight: 600;
+  z-index: 15;
+  position:relative;
+  z-index:15; 
+}
+ 
+.encabezado {
+  font-size: 50px;
+  font-weight: 600;
+  margin-top: 100px;
+}
+
+
+#tittle-portada {
+  padding-bottom: ;
+}
+
+
+
+@media (max-width: 800px) {
+#portada-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 40px 0px 40px;
+  margin-bottom: 100;
+}
+
+#card-section{
+  padding-top: 100px;
+}
+
+
+#port-cont-1 {
+  width: 90%;
+  margin-top: 120px;
+}
+#tittle-portada {
+  text-align: center;
+}
+}
+
+@media (max-width: 480px) {
+  
+  #portada {
+    height: 90vh;
+    overflow: hidden;
+  }
+  
+  #wave-portada{
+    height: 500px;
+  }
+  
+  #portada-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px 0px 20px;
+  }
+  
+  #tittle-portada {
+    font-size: 33px;
+    text-align: center;
+  }
+
+  #port-cont-1 {
+    width: 100%;
+  }
+  .encabezado{
+    font-size: 33px;
+    text-align: center;
+    margin-top: 0px;
+  }
+  }
