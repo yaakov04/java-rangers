@@ -12,7 +12,7 @@
 </head> 
 <body>
 <!--header-->
-  <header class="bg-white">
+  <header id="header-wrapper" class="bg-white">
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light bg-white header-space">
         <a class="navbar-brand color-azul" href="index.html">
@@ -80,16 +80,29 @@
 
 <!--Portada-->
 <section id="portada">
+  <div id="wave-portada">
+    <svg id="wave" width="1728" height="794" viewBox="0 0 1728 794" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M-979.438 323.78C-800.711 413.675 -627.654 574.803 -449.42 672.529C-195.535 811.829 68.8579 820.244 322.342 675.778C568.677 535.729 696.092 304.542 939.5 131C1155.36 -22.963 1519.04 -61.3704 1728 131V794L-1969.8 794V566.138C-1654.05 242.431 -1311.55 158.616 -979.438 323.78Z" fill="#E8F9FD"/>
+  </svg>
+</div>
   <div id="portada-container" class="d-flex align-items-center" >
     <div id="port-cont-1">
       <h1 id="tittle-portada">Doctores en tu <span style="color: #79DAE8;">Ciudad</span> Encuentra a Tu Médico <span style="color: #79DAE8;">Especialista</span> </h1>
+    </div>
+    <div id="port-cont-2">
+      <img src="/assets/img/doctor-portada.png" alt="doctor en tu ciudad">
+      
     </div>
   </div>
 </section>
 <!--/Portada-->
 
+<!--cards-->
+<section id="card-section">
+  <div class="text-center">
+    <h2 class="encabezado" data-aos="slide-up">Equipo de Desarrollo</h2>
+  </div>
     <ul class="cards">
-        
         <li data-aos="zoom-out" data-aos-delay="400">
           <a href="" class="card">
             <img src="./assets/img/Joanna.png" class="card__image" alt="" />
@@ -227,6 +240,8 @@
             </a>      
           </li>  
       </ul>
+</section>
+<!--/cards-->
 
 <!--Menu hamburguesa-->
 <div class="main_hamburger_menu_container">
