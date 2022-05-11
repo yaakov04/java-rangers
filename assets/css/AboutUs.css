@@ -12,6 +12,9 @@ body {
   background-color: #E8F9FD;
 }
 
+
+
+
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -112,6 +115,7 @@ body {
   width: 100%;
   background-color: #FFFFFF;
   position: relative;
+  overflow: hidden;
 }
 
 #wave-portada {
@@ -119,10 +123,15 @@ body {
   bottom: 0;
   right: 0;
   z-index: 0;
+  height: 670px;
 }
 
+
+
+
+
 #portada-container {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   padding: 0px 120px 0px 120px;
 }
@@ -162,7 +171,13 @@ body {
   display: flex;
   flex-direction: column;
   padding: 0px 40px 0px 40px;
+  margin-bottom: 100;
 }
+
+#card-section{
+  padding-top: 100px;
+}
+
 
 #port-cont-1 {
   width: 90%;
