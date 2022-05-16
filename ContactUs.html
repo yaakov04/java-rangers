@@ -88,24 +88,24 @@
                 <div class="cont-der">
                   <div id="wrapper-form">
                     <h1 id="titulo-form">Contáctanos</h1>
-                    <form id="form-bg">
+                    <form id="form-bg"> <!-- Aqui comienza el formulario -->
                         <div class="form-group">
                             <label class="label-font"for="exampleFormControlInput1">Nombre</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+                            <input type="text" class="form-control" id="formName" placeholder="Nombre" >
                         </div>
                         <div class="form-group">
                             <label class="label-font for="exampleFormControlInput1">Correo electrónico</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Correo electrónico">
+                            <input type="email" class="form-control" id="formEmail" placeholder="Correo electrónico" >
                         </div>
                         <div class="form-group">
                             <label class="label-font for="exampleFormControlInput1">Teléfono</label>
-                            <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="Teléfono">
+                            <input type="tel" class="form-control" id="formPhone" placeholder="Teléfono"  minlength="7"> 
                         </div>
                         <div class="form-group">
                           <label class="label-font" for="exampleFormControlTextarea1">Deja tu mensaje</label>
-                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          <textarea class="form-control" id="formText" rows="3" ></textarea>
                         </div>
-                        <button type="submit" class=" boton-formulario">Enviar</button>
+                        <button type="submit" id="botonFormulario" class="boton-formulario">Enviar</button>
                       </form>
                 </div>
               </div>
@@ -133,7 +133,7 @@
     </div>
   </div>
   <!--/Menu hamburguesa-->
-
+  <script src="./assets/js/ContactUs.js"></script>
   <script src="./assets/js/main.js"></script>
 </body>
 </html>
