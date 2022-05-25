@@ -4,16 +4,12 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Doctorfy</title>
+        <title>Document</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
-        <link rel="stylesheet" href="./assets/css/AboutUs.css" />
+        <link rel="stylesheet" href="./assets/css/ContactUs.css" />
         <link rel="stylesheet" href="./assets/css/NavBarStyle.css" />
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <!--Animate on Scroll-->
+        <link rel="stylesheet" href="./assets/css/SignInDoc.css" />
         <link rel="icon" type="image/jpg" href="./assets/img/icono2.png" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@200;400;600;700&display=swap" rel="stylesheet">
     </head>
     <body>
         <!--header-->
@@ -82,177 +78,52 @@
         </header>
         <!--/header-->
 
-        <!--Portada-->
-        <section id="portada">
-            <div id="wave-portada">
-                <svg width="1728" height="794" viewBox="0 0 1728 794" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path id="path" d="M-979.438 323.78C-800.711 413.675 -627.654 574.803 -449.42 672.529C-195.535 811.829 68.8579 820.244 322.342 675.778C568.677 535.729 696.092 304.542 939.5 131C1155.36 -22.963 1519.04 -61.3704 1728 131V794L-1969.8 794V566.138C-1654.05 242.431 -1311.55 158.616 -979.438 323.78Z" fill="#E8F9FD" />
-                </svg>
-            </div>
-            <div id="portada-container" class="d-flex align-items-center">
-                <div id="port-cont-1">
-                    <h1 id="tittle-portada">Doctores en tu <span style="color: #79dae8">Ciudad</span> Encuentra a Tu Médico <span style="color: #79dae8">Especialista</span></h1>
+        <main>
+            <section id="Formulario-Section">
+                <div class="container-form">
+                    <div class="column-wrapper">
+                        <div class="cont-izq">
+                            <img id="form-imagen" src="./assets/img/img-form.png" alt="" />
+                        </div>
+                        <div class="cont-der">
+                            <div id="wrapper-form">
+                                <h1 id="titulo-form">Registrate con nosotros como doctor</h1>
+                                <form id="form-bg">
+                                    <!-- Aqui comienza el formulario -->
+                                    <div class="form-group">
+                                        <label class="label-font" for="formName">Nombre(s)</label>
+                                        <input type="text" class="form-control" id="formName" placeholder="Nombre" />
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="form-group">
+                                            <label class="label-font" for="exampleFormControlInput1"> Contraseña</label>
+                                            <input type="password" class="form-control" id="formContraseña" placeholder="Contraseña" minlength="10" />
+                                        </div>
+                                        <div class="form-group ml-5">
+                                            <label class="label-font" for="exampleFormControlInput1"> Confirmar contraseña</label>
+                                            <input type="password" class="form-control" id="formContraseña" placeholder="contraseña" minlength="10" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="label-font" for="formEmail">Email</label>
+                                        <input type="email" class="form-control" id="formEmail" placeholder="Email" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="label-font" for="formEspecialidad">Especialidad</label>
+                                        <input type="text" class="form-control" id="formEspecialidad" placeholder="Especialidad" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label><input type="checkbox" id="formNovedades" placeholder="Correo de novedades" /> He leido y acepto los terminos y condiciones de uso y politicas de privacidad</label>
+                                    </div>
+
+                                    <button type="submit" id="botonFormulario" class="boton-formulario">Crear mi perfil</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div id="port-cont-2">
-                    <img src="./assets/img/doctor-portada.png" alt="doctor en tu ciudad" />
-                </div>
-            </div>
-        </section>
-        <!--/Portada-->
-        <div class="text-center">
-            <h2 class="encabezado" data-aos="slide-up">Acerca de nosotros</h2>
-            <p data-aos="slide-up" id="texto">Doctorfy nace de la idea de brindarle a los pacientes el poder de ver y elegir al doctor ideal para atender sus necesidades. Así como también para ayudar a los doctores a llegar a más pacientes de una manera más efectiva y económica.
-            </p>
-            <hr data-aos="slide-up">
-        </div>
-        <!--cards-->
-        <section id="card-section">
-            <div class="text-center">
-                <h2 class="encabezado" data-aos="slide-up">Equipo de Desarrollo</h2>
-            </div>
-            <ul class="cards">
-                <li data-aos="zoom-out" data-aos-delay="400">
-                    <articles class="card">
-                        <img src="./assets/img/Joanna.png" class="card__image" alt="" />
-                        <div class="card__overlay">
-                            <div class="card__header">
-                                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
-                                <img class="card__thumb" src="./assets/img/Joanna.svg" alt="" />
-                                <div class="card__header-text">
-                                    <h3 class="card__title">Joanna Pérez</h3>
-                                    <span class="card__status"></span>
-                                </div>
-                            </div>
-                            <p class="card__description">Desarrolladora Java FullStack, con gran gusto por el aprendizaje y los retos,siempre con gran disposición de ayudar a su equipo</p>
-                        </div>
-                    </articles>
-                </li>
-
-                <li data-aos="zoom-out" data-aos-delay="400">
-                    <articles class="card">
-                        <img src="./assets/img/Danna.png" class="card__image" alt="" />
-                        <div class="card__overlay">
-                            <div class="card__header">
-                                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
-                                <img class="card__thumb" src="./assets/img/Danna.svg" alt="" />
-                                <div class="card__header-text">
-                                    <h3 class="card__title">Danna Zavala</h3>
-                                    <span class="card__status"></span>
-                                </div>
-                            </div>
-                            <p class="card__description">Desarrolladora Java FullStack apasionada por la tecnología. <br> Autodidacta, organizada y cooperativa para el trabajo en equipo.</p>
-                        </div>
-                    </articles>
-                </li>
-
-                <li data-aos="zoom-out" data-aos-delay="400">
-                    <articles class="card">
-                        <img src="./assets/img/Saira.png" class="card__image" alt=""> 
-                        <div class="card__overlay">
-                            <div class="card__header">
-                                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
-                                <img class="card__thumb" src="./assets/img/saira.svg" alt="" />
-                                <div class="card__header-text">
-                                    <a href="https://www.linkedin.com/in/sairamiranda/" target="_blank"><h3 class="card__title">Saira Arteaga</h3></a>
-                                    <span class="card__status"></span>
-                                </div>
-                            </div>
-                            <p class="card__description">Desarrolladora Java FullStack, con gusto especial por el FrontEnd y muchas ganas por continuar aprendiendo.</p>
-                        </div>
-                    </articles>
-                </li>
-
-                <li data-aos="zoom-out" data-aos-delay="400">
-                    <articles class="card">
-                        <img src="./assets/img/Rodrigo.png" class="card__image" alt="" />
-                        <div class="card__overlay">
-                            <div class="card__header">
-                                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
-                                <img class="card__thumb" src="./assets/img/rodrigo.svg" alt="" />
-                                <div class="card__header-text">
-                                    <h3 class="card__title">Rodrigo Rosales</h3>
-                                    <span class="card__status"></span>
-                                </div>
-                            </div>
-                            <p class="card__description">Desarrollador Web con acentuacion en UX y UI. <br> Me apasionan las animaciones y dejar las paginas "re que te lindas".</p>
-                        </div>
-                    </articles>
-                </li>
-
-                <li data-aos="zoom-out" data-aos-delay="400">
-                    <articles class="card">
-                        <img src="./assets/img/Diego.png" class="card__image" alt="" />
-                        <div class="card__overlay">
-                            <div class="card__header">
-                                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
-                                <img class="card__thumb" src="./assets/img/diego.svg" alt="" />
-                                <div class="card__header-text">
-                                    <h3 class="card__title">Diego Briones</h3>
-                                    <span class="card__status"></span>
-                                </div>
-                            </div>
-                            <p class="card__description">Desarrollador Backend. <br> Soy una persona flexible y abierta al trabajo en equipo.</p>
-                        </div>
-                    </articles>
-                </li>
-
-                <li data-aos="zoom-out" data-aos-delay="400">
-                    <articles class="card">
-                        <img src="./assets/img/Jonathan.png" class="card__image" alt="" />
-                        <div class="card__overlay">
-                            <div class="card__header">
-                                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
-                                <img class="card__thumb" src="./assets/img/jonatan.svg" alt="" />
-                                <div class="card__header-text">
-                                    <h3 class="card__title">Jonathan Casillas</h3>
-                                    <span class="card__status"></span>
-                                </div>
-                            </div>
-                            <p class="card__description">Aprendiz apasionado por las tecnologías emergentes, especialmente aquellas relacionadas con el análisis de big data.</p>
-                        </div>
-                    </articles>
-                </li>
-
-                <li data-aos="zoom-out" data-aos-delay="400">
-                    <articles class="card">
-                        <img src="./assets/img/Hiram.png" class="card__image" alt="" />
-                        <div class="card__overlay">
-                            <div class="card__header">
-                                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
-                                <img class="card__thumb" src="./assets/img/Hiram.svg" alt="" />
-                                <div class="card__header-text">
-                                    <h3 class="card__title">Hiram Sánchez</h3>
-                                    <span class="card__status"></span>
-                                </div>
-                            </div>
-                            <p class="card__description">Desarrollador Java Full Stack, con experiencia en procesamiento de señales. Siempre dispuesto a seguir aprendiendo. <!--especialmente si es algo relativo a Back End o Data Science</p>-->
-                        </div>
-                    </articles>
-                </li>
-
-                <li data-aos="zoom-out" data-aos-delay="400">
-                    <articles class="card">
-                        <img src="./assets/img/Miguel.png" class="card__image" alt="" />
-                        <div class="card__overlay">
-                            <div class="card__header">
-                                <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>
-                                <img class="card__thumb" src="./assets/img/Miguel.svg" alt="" />
-                                <div class="card__header-text">
-                                    <h3 class="card__title">Miguel Angel Anaya</h3>
-                                    <span class="card__status"></span>
-                                </div>
-                            </div>
-                            <p class="card__description">
-                                Desarrollador Java FullStack/Ingeniero en robótica (en proceso). Siempre interesado en nuevas tecnologías. <!--<br />
-                                contacto: <br />miguelangel.anayagtz@gmail.com <br />
-                                ig: @miguel_breatle -->
-                            </p>
-                        </div>
-                    </articles>
-                </li>
-            </ul>
-        </section>
-        <!--/cards-->
+            </section>
+        </main>
 
         <!--Menu hamburguesa-->
         <div class="main_hamburger_menu_container">
@@ -274,12 +145,7 @@
             </div>
         </div>
         <!--/Menu hamburguesa-->
-
+        <script src="./assets/js/ContactUs.js"></script>
         <script src="./assets/js/main.js"></script>
-        <!--Animate on Scroll script-->
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-            AOS.init();
-        </script>
     </body>
 </html>
