@@ -1,3 +1,5 @@
+import templates from "./templates.js";
+
 //En esta funcion se implementara toda la logica del menu
 const hamburgerMenu = function () {
     const btn = document.querySelector("#main_hamburger_menu_btn");
@@ -30,5 +32,7 @@ const hamburgerMenu = function () {
 
 //Ejecuta el JS despues de que se haya cargado todo el DOM
 document.addEventListener("DOMContentLoaded", () => {
+    
+    templates();
     hamburgerMenu();
 });
