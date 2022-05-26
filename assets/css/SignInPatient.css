@@ -1,0 +1,15 @@
+body {
+    font-family:'Lexend', sans-serif;
+}
+
+.cont-der{
+    width: 100%;
+    
+}
+
+@media(min-width:992px){
+    .cont-der{
+        width: 60%;
+     }
+}
+
