@@ -9,7 +9,7 @@ const HamburgerMenu = function(){
                     <button id="close_main_hamburger_menu" class="">x</button>
                 </div>
                 <nav class="main_hamburger_menu d-flex flex-column">
-                    <a class="d-lg-none" href="#">Soy Doctor</a>
+                    <a class="d-lg-none" href="SignInDoc.html">Soy Doctor</a>
                     <a class="d-lg-none" href="#">Soy Paciente</a>
                     <a href="index.html">Home</a>
                     <a href="AboutUs.html">Acerca de Nosotros</a>
