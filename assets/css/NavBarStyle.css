@@ -114,3 +114,23 @@
         transform: translateX(100%);
     }
 }
+
+
+/*footer*/
+
+.tituloFooter{
+    font-family: Lexend;
+    font-weight: 700;
+    color: #79dae8;
+}
+
+footer{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+#logo {
+    display: flex;
+  justify-content: center;
+}
