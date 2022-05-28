@@ -38,5 +38,4 @@ DoctorCards = function(imgLink,doctorName,doctorCity,doctorRating,doctorEspecial
     </div>`;
 }
 
-const cardCreate = document.querySelector('#cardCreate');
-cardCreate.appendChild(DoctorCards(`"./assets/img/docotrimg.png"`,"Shaun Murphy","Guadalajara","4.7","Cardiólogo","Médico Internista con especialidad en Cardiología."));
+DoctorCards(`"./assets/img/docotrimg.png"`,"Shaun Murphy","Guadalajara","3.7","Cardiólogo","Médico Internista con especialidad en Cardiología.");
