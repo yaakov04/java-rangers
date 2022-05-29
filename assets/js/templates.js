@@ -2,13 +2,13 @@
 import Header from "./templates/Header.js";
 import HamburgerMenu from "./templates/HamburgerMenu.js";
 import Footer from "./templates/Footer.js";
-import DrCards from "./templates/DrCards.js";
+import GrillaDrCards from "./templates/GrillaDrCards.js"; // importo el template de la grilla
 
 // Seleccione el contenedor en el html
 const headerHtml = document.querySelector('#header-wrapper');
 const hamburgerMenuHtml = document.querySelector('#hamburger-menu');
 const footerHtml = document.querySelector('#footer-1');
-const drCardContainer = document.querySelector('#cardCreate');
+const drCardContainer = document.querySelector('#cardCreate'); // Selecciono el lugar en donde se va a inyectar la grilla
 
 const templates = function (){
     // Pregunto si existe el contenedor en el html
@@ -25,8 +25,9 @@ const templates = function (){
         footerHtml.appendChild(Footer());
     }
 
+    // Nos aseguramos que exista el lugar en el html en donde se va a inyectar la grilla
     if (drCardContainer) {
-        drCardContainer.appendChild(DrCards(`"./assets/img/docotrimg.png"`,"Shaun Murphy","Guadalajara","4.7","Cardiólogo","Médico Internista con especialidad en Cardiología."));
+        drCardContainer.appendChild(GrillaDrCards()); // inyecto la grilla
     }
 
 
