@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doctorfy</title>
-    <link rel="stylesheet" href="./assets/css/NavBarStyle.css" /> <!--estilos header y footer-->
     <link rel="preconnect" href="https://fonts.googleapis.com"> <!--google fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!--google fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@200;400;600;700&display=swap" rel="stylesheet"><!--google fonts-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" /><!--bootstrap-->
+    <link rel="stylesheet" href="./assets/css/NavBarStyle.css" /> <!--estilos header y footer-->
     <link rel="stylesheet" href="./assets/css/ContactUs.css" /><!--estilos generales-->
     <link rel="icon" type="image/jpg" href="./assets/img/icono2.png"> <!--favicon-->
 </head>
@@ -21,28 +21,29 @@
 
     <!--main-->
     <main>
-        <h1>Perfil</h1>
+        
         <div class="container" >
+            <h1 id="profile-title">PERFIL</h1>
             <form>
-                <h1>Datos principales</h1> 
+                <h1>Datos principales</h1>
                  <div class="d-flex">
                      <div class="form-group">
                          <label class="label-font" for="formContraseña"> Nombre </label>
-                         <input type="password" class="form-control" id="formContraseña" placeholder="Contraseña" minlength="10" />
+                         <input type="text" class="form-control" id="formContraseña" placeholder="Nombre" minlength="10" />
                      </div>
                      <div class="form-group ml-5">
-                         <label class="label-font" for="formContraseña"> Cedula profesional </label>
-                         <input type="password" class="form-control" id="formContraseña" placeholder="contraseña" minlength="10" />
+                         <label class="label-font" for="formContraseña"> Cédula profesional </label>
+                         <input type="text" class="form-control" id="formContraseña" placeholder="Cédula profesional" minlength="10" />
                      </div>
                  </div>
                  <div class="d-flex">
                      <div class="form-group">
                          <label class="label-font" for="formContraseña"> Especialidad </label>
-                         <input type="password" class="form-control" id="formContraseña" placeholder="Contraseña" minlength="10" />
+                         <input type="text" class="form-control" id="formContraseña" placeholder="Especialidad" minlength="10" />
                      </div>
                      <div class="form-group ml-5">
-                         <label class="label-font" for="formContraseña"> Cedula profesional </label>
-                         <input type="password" class="form-control" id="formContraseña" placeholder="contraseña" minlength="10" />
+                         <label class="label-font" for="formContraseña"> Cédula Especialidad </label>
+                         <input type="text" class="form-control" id="formContraseña" placeholder="Cédula especialidad" minlength="10" />
                      </div>
                  </div>
                  <div class="form-group">
@@ -57,11 +58,11 @@
                  <h1>Educación</h1>
                  <div class="form-group">
                      <label class="label-font" for="formContraseña"> Egresado de la univerdad</label>
-                     <input type="password" class="form-control" id="formContraseña" placeholder="Contraseña" minlength="10" />
+                     <input type="text" class="form-control" id="formContraseña" placeholder="" minlength="10" />
                  </div>
                  <div class="form-group">
                      <label class="label-font" for="formContraseña"> Especialista médico por la </label>
-                     <input type="password" class="form-control" id="formContraseña" placeholder="Contraseña" minlength="10" />
+                     <input type="text" class="form-control" id="formContraseña" placeholder="" minlength="10" />
                  </div>
                  <div>
                      <button type="submit" id="botonFormulario" class="boton-formulario">Guardar</button>
@@ -82,21 +83,21 @@
                  <div class="d-flex">
                      <div class="form-group">
                          <label class="label-font" for="formContraseña"> Enfermedad 1</label>
-                         <input type="password" class="form-control" id="formContraseña" placeholder="Contraseña" minlength="10" />
+                         <input type="text" class="form-control" id="formContraseña" placeholder="Ej. Diabetes" minlength="10" />
                      </div>
                      <div class="form-group ml-5">
                          <label class="label-font" for="formContraseña"> Enfermedad 2</label>
-                         <input type="password" class="form-control" id="formContraseña" placeholder="contraseña" minlength="10" />
+                         <input type="text" class="form-control" id="formContraseña" placeholder="Ej. Infertilidad" minlength="10" />
                      </div>
                  </div>
                  <div class="d-flex">
                      <div class="form-group">
                          <label class="label-font" for="formContraseña"> Enfermedad 3</label>
-                         <input type="password" class="form-control" id="formContraseña" placeholder="Contraseña" minlength="10" />
+                         <input type="text" class="form-control" id="formContraseña" placeholder="Ej. Hernia de disco" minlength="10" />
                      </div>
                      <div class="form-group ml-5">
                          <label class="label-font" for="formContraseña"> Enfermedad 4</label>
-                         <input type="password" class="form-control" id="formContraseña" placeholder="contraseña" minlength="10" />
+                         <input type="text" class="form-control" id="formContraseña" placeholder="Ej. Arritmia cardiaca" minlength="10" />
                      </div>
                  </div>
                  <div>
@@ -107,45 +108,45 @@
                  <h1>Información de contacto</h1>
                  <div class="d-flex">
                     <div class="form-group">
-                        <label class="label-font" for="formContraseña"> Telefono</label>
-                        <input type="password" class="form-control" id="formContraseña" placeholder="Contraseña" minlength="10" />
+                        <label class="label-font" for="formContraseña"> Teléfono</label>
+                        <input type="tel" class="form-control" id="formContraseña" placeholder="Teléfono" minlength="10" />
                     </div>
                     <div class="form-group ml-5">
-                        <label class="label-font" for="formContraseña"> Pagina web</label>
-                        <input type="password" class="form-control" id="formContraseña" placeholder="contraseña" minlength="10" />
+                        <label class="label-font" for="formContraseña"> Página web</label>
+                        <input type="url" class="form-control" id="formContraseña" placeholder="Página web" minlength="10" />
                     </div>
                 </div>
                 <div class="d-flex">
                     <div class="form-group">
                         <label class="label-font" for="formContraseña"> Correo</label>
-                        <input type="password" class="form-control" id="formContraseña" placeholder="Contraseña" minlength="10" />
+                        <input type="email" class="form-control" id="formContraseña" placeholder="Correo electrónico" minlength="10" />
                     </div>
                     <div class="form-group ml-5">
                         <label class="label-font" for="formContraseña"> Dirección</label>
-                        <input type="password" class="form-control" id="formContraseña" placeholder="contraseña" minlength="10" />
+                        <input type="text" class="form-control" id="formContraseña" placeholder="Dirección" minlength="10" />
                     </div>
                 </div>
                 <div class="d-flex">
                     <div class="form-group">
                         <label class="label-font" for="formContraseña"> Facebook</label>
-                        <input type="password" class="form-control" id="formContraseña" placeholder="Contraseña" minlength="10" />
+                        <input type="url" class="form-control" id="formContraseña" placeholder="Facebook" minlength="10" />
                     </div>
                     <div class="form-group ml-5">
                         <label class="label-font" for="formContraseña"> Instagram</label>
-                        <input type="password" class="form-control" id="formContraseña" placeholder="contraseña" minlength="10" />
+                        <input type="url" class="form-control" id="formContraseña" placeholder="Instagram" minlength="10" />
                     </div>
                 </div>
                 <div class="d-flex">
                     <div class="form-group">
                         <label class="label-font" for="formContraseña"> Whatsapp</label>
-                        <input type="password" class="form-control" id="formContraseña" placeholder="Contraseña" minlength="10" />
+                        <input type="tel" class="form-control" id="formContraseña" placeholder="Whatsapp" minlength="10" />
                     </div>
                 </div>
                 <div>
                     <button type="submit" id="botonFormulario" class="boton-formulario">Guardar</button>
                 </div>
              </form>
-        </div>
+         </div>
     </main>
     <!--main-->
 
