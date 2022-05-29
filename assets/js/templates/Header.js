@@ -5,7 +5,7 @@ const Header = function(){
     // al innerHTML del nodo creado le inserto el codigo html del componente
     header.innerHTML= `
     <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-white header-space">
+            <nav class="navbar navbar-expand-lg navbar-light bg-white header-space flex-nowrap">
                 <a class="navbar-brand color-azul" href="index.html">
                     <svg width="262" height="45" viewBox="0 0 262 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M9.56311 40.1424V6.51306H3.52379V0.9028H20.7151C25.4656 0.9028 29.119 1.15 31.6753 1.64439C34.2529 2.13878 36.7453 3.25653 39.1525 4.99764C41.5597 6.73876 43.477 9.13548 44.9043 12.1878C46.3529 15.2186 47.0771 18.6794 47.0771 22.57C47.0771 26.998 46.3848 30.8457 45.0001 34.1129C43.6155 37.3802 41.7941 39.8199 39.536 41.4321C37.2992 43.0442 34.6257 44.1727 31.5155 44.8176C28.4266 45.4409 24.4856 45.7526 19.6925 45.7526H3.52379V40.1424H9.56311ZM16.2735 40.1424H19.7884C23.7081 40.1424 26.8076 39.8952 29.087 39.4008C31.3877 38.9064 33.3263 38.0681 34.9027 36.8858C36.4791 35.6821 37.7572 33.8765 38.7371 31.469C39.7171 29.0616 40.207 26.2242 40.207 22.9569C40.207 19.0663 39.3975 15.7668 37.7785 13.0584C36.1808 10.35 34.1251 8.58735 31.6114 7.77053C29.119 6.93222 25.2738 6.51306 20.076 6.51306H16.2735V40.1424Z" fill="#5EA7B1" />
