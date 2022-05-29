@@ -1,9 +1,10 @@
 //Constructor de tarjeta de doctor
-DoctorCards = function(imgLink,doctorName,doctorCity,doctorRating,doctorEspecialidad,doctorDescripcion){
+const DoctorCards = function(imgLink,doctorName,doctorCity,doctorRating,doctorEspecialidad,doctorDescripcion){
 
     //*Calificacion del doctor en estrellas
     let parteDecimal=doctorRating%1;
     let star="<img src=\"./assets/img/Star.svg\">";
+    let StarRating = null;
     //Muestra las estrellas completas de la calificacion segun el número de calificacion.
     if (doctorRating>0&&doctorRating<=1.75)
         {StarRating= star;}
@@ -21,7 +22,9 @@ DoctorCards = function(imgLink,doctorName,doctorCity,doctorRating,doctorEspecial
         StarRating+="<img src=\"./assets/img/halfStar.svg\" width=\"24px\" height=\"20px\">";}
 
     //*Construccion de la tarjeta
-    cardCreate.innerHTML=`<div class="card" style="width: 18rem;">
+    const containerCard = document.createElement('div'); // Agregue un nodo como contenedor de un card individual
+
+    containerCard.innerHTML=`<div class="card" style="width: 18rem;">
     <div class="imgContainer">
     <img src=` + imgLink + `class="card-img-top" alt="...">
     <div class="drData">
@@ -36,6 +39,9 @@ DoctorCards = function(imgLink,doctorName,doctorCity,doctorRating,doctorEspecial
     <a href="#" class="btnAgendarCita">Agendar Cita</a>
     </div>
     </div>`;
+    
+    return containerCard; //regreso el nodo con el card
+
 }
 
-DoctorCards(`"./assets/img/docotrimg.png"`,"Shaun Murphy","Guadalajara","3.7","Cardiólogo","Médico Internista con especialidad en Cardiología.");
+export default DoctorCards;
