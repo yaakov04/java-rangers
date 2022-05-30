@@ -2,8 +2,7 @@ const formulario = document.getElementById('formulario'); //Se define una consta
 const inputs = document.querySelectorAll('#formulario input'); // Se define una constante para poder acceder a todos los inputs del formulario
 
 const expresiones = { //expresiones regulares
-	usuario: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo. De 4 a 16 caracteres
-	nombre: /^[a-zA-ZÀ-ÿ\s]{4,40}$/, // Letras y espacios, pueden llevar acentos. De 4 a 40 caracteres 
+	nombre: /^[a-zA-ZÀ-ÿ\s]{2,40}$/, // Letras y espacios, pueden llevar acentos. De 4 a 40 caracteres 
 	password: /^.{4,12}$/, // De 4 a 12 caracteres.
 	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/, //
 	telefono: /^\d{8,14}$/ // 7 a 14 numeros.
