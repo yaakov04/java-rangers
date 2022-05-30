@@ -8,6 +8,30 @@ body{
     overflow: hidden;
 }
 
+.input-groupp {
+    display: flex;
+}
+
+#grupo__apellido1 {
+    width: 55%;
+    margin-right: 5px;
+}
+
+#grupo__apellido2 {
+    width: 55%;
+    margin-left: 5px;
+}
+
+#grupo__password {
+    width: 55%;
+    margin-right: 5px;
+}
+
+#grupo__password2 {
+    width: 55%;
+    margin-left: 5px;
+}
+
 .container-form {
     width: 100%;
     height: 100%;
