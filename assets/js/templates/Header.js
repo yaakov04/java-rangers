@@ -29,7 +29,7 @@ const Header = function(){
                 <div class="w-lg-100">
                     <div class="navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                         <div class="navbar-nav d-flex align-items-center">
-                            <a href="#" class="nav-link d-none d-lg-flex flex-row align-items-center">
+                            <a href="SignInDoc.html" class="nav-link d-none d-lg-flex flex-row align-items-center">
                                 <div class="icon-estetoscopio mr-3">
                                     <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M56.96 20.229C55.3744 20.229 53.8245 20.6992 52.5062 21.58C51.1879 22.4609 50.1603 23.713 49.5536 25.1778C48.9468 26.6427 48.7881 28.2545 49.0974 29.8096C49.4067 31.3647 50.1703 32.7931 51.2914 33.9143C52.4126 35.0354 53.841 35.7989 55.3961 36.1082C56.9512 36.4175 58.5631 36.2587 60.0279 35.652C61.4927 35.0452 62.7448 34.0176 63.6256 32.6993C64.5065 31.381 64.9766 29.831 64.9766 28.2455C64.9766 26.1194 64.132 24.0803 62.6286 22.577C61.1251 21.0736 59.0861 20.229 56.96 20.229ZM56.9599 31.8867C56.2396 31.8867 55.5354 31.6731 54.9366 31.2729C54.3377 30.8727 53.8709 30.3039 53.5953 29.6385C53.3197 28.973 53.2476 28.2407 53.3881 27.5343C53.5287 26.8278 53.8756 26.1789 54.3849 25.6697C54.8943 25.1604 55.5432 24.8136 56.2497 24.6731C56.9562 24.5327 57.6884 24.6049 58.3539 24.8806C59.0193 25.1563 59.588 25.6231 59.9881 26.2221C60.3882 26.821 60.6017 27.5252 60.6016 28.2455C60.6005 29.2109 60.2164 30.1365 59.5337 30.8192C58.851 31.5018 57.9253 31.8857 56.9599 31.8867Z" fill="#79DAE8" />
@@ -38,7 +38,7 @@ const Header = function(){
                                 </div>
                                 <div class="">Soy Doctor</div>
                             </a>
-                            <a href="#" class="nav-link d-none d-lg-flex flex-row align-items-center">
+                            <a href="SignInPatient.html" class="nav-link d-none d-lg-flex flex-row align-items-center">
                                 <div class="icon-estetoscopio mr-3">
                                     <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M35 4.375C28.6038 4.375 23.4106 9.56812 23.4106 15.9644C23.4106 22.3606 28.6038 27.5537 35 27.5537C41.3963 27.5537 46.5894 22.3606 46.5894 15.9644C46.5894 9.56812 41.3963 4.375 35 4.375ZM35 7.65625C39.585 7.65625 43.3081 11.3794 43.3081 15.9644C43.3081 20.5494 39.585 24.2725 35 24.2725C30.415 24.2725 26.6919 20.5494 26.6919 15.9644C26.6919 11.3794 30.415 7.65625 35 7.65625Z" fill="#79DAE8" />
