@@ -30,8 +30,15 @@ body {
 
 #port-cont-2 {
     position: static;
-    z-index: 16;
+    z-index: 10;
 }
+
+.img-doc{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
 
 #tittle-portada {
     font-size: 50px;
@@ -66,7 +73,8 @@ body {
     justify-content: space-between;
     align-items: center;
     align-content:center;
-    z-index: 15;
+    position: absolute;
+    z-index: 17;
 
 } 
 
@@ -75,15 +83,15 @@ body {
     flex-direction: row;
     width: 55%;
     justify-content: space-evenly;
-    padding-left: 1rem;
+    padding-left: .2rem;
     padding-right: 1rem;
-    border-right: solid #E8F9FD;
 }
 
 .especialidad-search{
    width: 80%;
    align-items: center;
     align-self:center;
+    border-right: solid #E8F9FD;
 }
 
 .esteto-icon{
@@ -98,7 +106,6 @@ body {
     border-color: #fff;
     font-size: 23px;
     color: #AFADAD;
- 
 }
 
 .esteto-icon-wrapper{
@@ -114,18 +121,29 @@ body {
     flex-direction: row;
     width: 45%;
     justify-content: space-between;
+    align-items: center;
+    
 }
 
 
 
 .ciudad-icon-wrapper{
     width: 20%;
+    align-items: center;
+    align-content:center;
+    justify-content: center;
+    justify-self: center;
 }
 
 .ciudad-search{
     width: 60%;
     align-items: center;
     align-self:center;
+}
+
+.ciudad-icon{
+    display: block;
+    margin: auto;
 }
 
 .ciudad{
@@ -137,4 +155,171 @@ body {
 }
 .lens-icon-wrapper{
     width: 20%;
+    align-self:center;
+    align-items: center;
+    align-content:center;
+    justify-content: center;
+    justify-self: center;
+}
+
+.lens-icon{
+    display: block;
+    margin: auto;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* *aqui empieza el buscador M */
+
+#buscador-m-section{
+    display: block;
+    padding-top: 30px;
+}
+
+.m-especialidad-wrapper{
+    width: 350px;
+    height: 62px;
+    border-radius: 50px;
+    background-color: #fff;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content:center;
+    border: solid #79DAE8;
+    position: absolute;
+    z-index: 17;
+    display: flex
+}
+
+.m-especialidad-search{
+    width: 80%;
+    align-items: center;
+     align-self:center;
+ }
+ 
+ .m-esteto-icon{
+     display: block;
+     margin: auto;
+ }
+ 
+ 
+ .m-buscador{
+     width: 90%;
+     border: solid;
+     border-color: #fff;
+     font-size: 23px;
+     color: #AFADAD;
+ }
+
+ .m-esteto-icon-wrapper{
+    width: 20%;
+    align-items: center;
+    align-content:center;
+    justify-content: center;
+    justify-self: center;
+}
+
+.m-ciudad-wrapper{
+    width: 350px;
+    height: 62px;
+    border-radius: 50px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content:center;
+    border: solid #79DAE8;
+    margin-top: 80px;
+    z-index: 17;
+    position: absolute;
+}
+
+
+
+.m-ciudad-icon-wrapper{
+    width: 20%;
+    align-items: center;
+    align-content:center;
+    justify-content: center;
+    justify-self: center;
+}
+
+.m-ciudad-search{
+    width: 60%;
+    align-items: center;
+    align-self:center;
+}
+
+.m-buscador{
+    display: block;
+}
+
+.m-ciudad{
+    width: 100%;
+    border: solid;
+    border-color: #fff;
+    font-size: 23px;
+    color: #AFADAD;
+}
+
+.m-ciudad-icon{
+    display: block;
+    margin: auto;
+}
+
+.m-lens-icon-wrapper{
+    width: 20%;
+    align-self:center;
+    align-items: center;
+    align-content:center;
+    justify-content: center;
+    justify-self: center;
+    height: 102%;
+}
+
+.m-lens-icon{
+    display: block;
+    height: 102%;
+    margin: auto;
+    margin-right: -2px;
+    cursor: pointer;
+}
+
+.m-search-container{
+    display: none;
+    z-index: 17;
+}
+
+@media (max-width:767px){
+
+    #portada-container{
+        width: 100%;
+        padding: 1.2rem;
+    }
+    
+    #port-cont-1{
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+
+   
+    .m-search-container{
+        display: block;
+        z-index: 17;
+    }
+
+    .search-container{
+        display: none;
+    }
+
+    #tittle-portada{
+        font-size: 35px;
+    }
+
+    #subtittle-portada{
+        font-size: 25px;
+    }
+
 }
