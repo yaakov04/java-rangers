@@ -291,7 +291,7 @@ body {
     z-index: 17;
 }
 
-@media (max-width:767px){
+@media (max-width:815px){
 
     #portada-container{
         width: 100%;
@@ -322,4 +322,12 @@ body {
         font-size: 25px;
     }
 
+}
+
+
+@media (max-width:480px){
+    #port-cont-1{
+       
+        margin-top: 100px;
+    }
 }
