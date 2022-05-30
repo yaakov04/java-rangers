@@ -302,9 +302,16 @@ body {
         width: 100%;
         padding: 0px;
         margin: 0px;
+        margin-top: 300px;
     }
 
-   
+    .img-doc{
+        position: absolute;
+        left: 0;
+        height: 650px;
+    }
+
+
     .m-search-container{
         display: block;
         z-index: 17;
@@ -335,8 +342,11 @@ body {
     .img-doc{
         position: absolute;
         left: 0;
-        height: 260px;
+        height: 280px;
     }
 
+    .m-search-container{
+        margin-top: 20px;
+    }
 
 }
