@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="./assets/css/NavBarStyle.css" /> <!--estilos header y footer-->
         <link rel="stylesheet" href="./assets/css/ContactUs.css"> <!--estilos generales-->
         <link rel="icon" type="image/jpg" href="./assets/img/icono2.png"> <!--favicon-->
-        <link rel="stylesheet" href="./assets/css/SignInDoc.css" /> <!--estilos sign in doctor-->
+        <link rel="stylesheet" href="./assets/css/SignI" /> <!--estilos sign in doctor-->
     </head>
     <body>
         <!--header-->
@@ -25,48 +25,87 @@
                 <div class="container-form">
                     <div class="column-wrapper">
                         <div class="cont-izq">
-                            <img id="form-imagen" src="./assets/img/Img-registro-doc.jpg" alt="" height="780" />
+                            <img id="form-imagen" src="./assets/img/Img-registro-doc.jpg" alt= />
                         </div>
                         <div class="cont-der">
                             <div id="wrapper-form">
-                                <h1 id="titulo-form">Regístrate con nosotros como doctor</h1>
-                                <form id="form-bg">
+                                <h1 id="titulo-form">Crea una cuenta</h1> 
+                                <br>             
+                                <form id="formulario" class="formulario">
                                     <!-- Aqui comienza el formulario -->
-                                    <div class="form-group">
-                                        <label class="label-font" for="formName">Nombre(s)</label>
-                                        <input type="text" class="form-control" id="formName" placeholder="Nombre" />
+                                    <div class="formulario__grupo" id="grupo__nombre">
+                                        <label for="nombre" class="label-font">Nombre(s)</label>
+                                            <div class="formulario__grupo-input">
+                                            <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre">
+                                            </div>
+                                            <p class="form-control-error">Ingresa tu nombre.</p>
                                     </div>
-                                    <div class="d-flex">
-                                        <div class="form-group">
-                                            <label class="label-font" for="formContraseña"> Contraseña</label>
-                                            <input type="password" class="form-control" id="formContraseña" placeholder="Contraseña" minlength="10" />
+
+                                    <div class="formulario__grupo" id="grupo__apellido1">
+                                      <label for="apellido1" class="label-font">Primer apellido</label>
+                                          <div class="formulario__grupo-input">
+                                          <input type="text" class="form-control" name="apellido1" id="apellido1" placeholder="Primer apellido">
+                                          </div>
+                                          <p class="form-control-error">Ingresa tu primer apellido</p>
+                                  </div>
+
+                                  <div class="formulario__grupo" id="grupo__apellido2">
+                                    <label for="apellido2" class="label-font">Segundo apellido</label>
+                                        <div class="formulario__grupo-input">
+                                        <input type="text" class="form-control" name="apellido2" id="apellido2" placeholder="Segundo apellido">
                                         </div>
-                                        <div class="form-group ml-5">
-                                            <label class="label-font" for="formContraseña"> Confirmar contraseña</label>
-                                            <input type="password" class="form-control" id="formContraseña" placeholder="contraseña" minlength="10" />
-                                        </div>
+                                        <p class="form-control-error">Ingresa tu segundo apellido.</p>
+                                </div>
+
+                                <div class="formulario__grupo" id="grupo__correo">
+                                  <label for="correo" class="label-font">Correo electronico</label>
+                                      <div class="formulario__grupo-input">
+                                      <input type="text" class="form-control" name="correo" id="correo" placeholder="correo@correo.com">
+                                      </div>
+                                      <p class="form-control-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+                              </div>
+
+
+                              <div class="formulario__grupo" id="grupo__password">
+                                <label for="password" class="label-font">Contraseña</label>
+                                    <div class="formulario__grupo-input">
+                                    <input type="password" class="form-control" name="password" id="password" placeholder="Contraseña">
                                     </div>
-                                    <div class="form-group">
-                                        <label class="label-font" for="formEmail">Correo electrónico</label>
-                                        <input type="email" class="form-control" id="formEmail" placeholder="Correo electrónico" />
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="label-font" for="formEspecialidad">Especialidad</label>
-                                        <input type="text" class="form-control" id="formEspecialidad" placeholder="Especialidad" />
-                                    </div>
-                                    <div class="form-group">
-                                        <label><input type="checkbox" id="formNovedades" placeholder="Correo de novedades" /> He leido y acepto los terminos y condiciones de uso y politicas de privacidad</label>
-                                    </div>
-                                   <div>
-                                    <button type="submit" id="botonFormulario" class="boton-formulario">Crear mi perfil</button>
-                                   </div> 
-                                </form>
+                                    <p class="form-control-error">La contraseña debe tener de 4 a 12 dígitos.</p>
                             </div>
-                        </div>
-                    </div>
+
+                            <div class="formulario__grupo" id="grupo__password2">
+                              <label for="password2" class="label-font">Confirma tu contraseña</label>
+                                  <div class="formulario__grupo-input">
+                                  <input type="password" class="form-control" name="password2" id="password2" placeholder="Confirma tu contraseña">
+                                  </div>
+                                  <p class="form-control-error">Ambas contraseñas deben ser iguales.</p>
+                          </div>
+
+                            <div class="formulario__grupo" id="grupo__terminos">
+                              <label class="formulario__label">
+                                <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                                Acepto los Terminos y Condiciones
+                              </label>
+                            </div>
+
+                            <div class="formulario__mensaje" id="formulario__mensaje">
+                              <p> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+                          </div>
+
+                          <div class="formulario__grupo formulario__grupo-btn-enviar">
+                              <button type="submit" class="boton-formulario" id="botonFormulario">Siguiente</button>
+                              <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">¡Formulario enviado exitosamente!</p>
+                              <p>Crea una cuenta <a href="SignInDoc.html">como doctor.</a></p>
+                          </div>
+                        </form>
+                  </div>
                 </div>
-            </section>
-        </main>
+                </div>
+          </div>
+        </section>
+      </main>
+      <!--main-->
         <!--main-->
 
         <!--footer-->

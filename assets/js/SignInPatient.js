@@ -2,11 +2,13 @@ const formulario = document.getElementById('formulario'); //Se define una consta
 const inputs = document.querySelectorAll('#formulario input'); // Se define una constante para poder acceder a todos los inputs del formulario
 
 const expresiones = { //expresiones regulares
-	usuario: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo. De 4 a 16 caracteres
+	
 	nombre: /^[a-zA-ZÀ-ÿ\s]{4,40}$/, // Letras y espacios, pueden llevar acentos. De 4 a 40 caracteres 
 	password: /^.{4,12}$/, // De 4 a 12 caracteres.
 	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/, //
-	telefono: /^\d{8,14}$/ // 7 a 14 numeros.
+	telefono: /^\d{8,14}$/, // 7 a 14 numeros.
+    apellido1: /^[a-zA-ZÀ-ÿ\s]{4,40}$/,
+    apellido2: /^[a-zA-ZÀ-ÿ\s]{4,40}$/
 }
 
 const campos = {
@@ -14,7 +16,9 @@ const campos = {
 	nombre: false,
 	password: false,
 	correo: false,
-	telefono: false
+	telefono: false,
+    apellido1: false,
+    apellido2: false
 }
 
 const validarFormulario = (e) => {
@@ -23,15 +27,15 @@ const validarFormulario = (e) => {
 		case "nombre":
 			validarCampo(expresiones.nombre, e.target, 'nombre');
 		break;
+        case "apellido1":
+			validarCampo(expresiones.apellido1, e.target, 'apellido1');
+		break;
+        case "apellido2":
+			validarCampo(expresiones.apellido2, e.target, 'apellido2');
+		break;
 		case "correo":
 			validarCampo(expresiones.correo, e.target, 'correo');
 		break;
-		case "telefono":
-			validarCampo(expresiones.telefono, e.target, 'telefono');
-		break;
-		/*case "usuario":
-			validarCampo(expresiones.usuario, e.target, 'usuario');
-		break;*/
 		case "password":
 			validarCampo(expresiones.password, e.target, 'password');
 			validarPassword2();
@@ -39,6 +43,7 @@ const validarFormulario = (e) => {
 		case "password2":
 			validarPassword2();
 		break;
+        
 		
 	}
 }
@@ -83,7 +88,7 @@ formulario.addEventListener('submit', (e) => {
 	e.preventDefault();
 
 	
-	if(campos.nombre && campos.correo && campos.telefono){
+	if(campos.nombre && campos.apellido1 &&  campos.apellido2 && campos.correo && campos.password && terminos.checked){
 		formulario.reset();
 		document.getElementById('formulario__mensaje').classList.remove('formulario__mensaje-activo');
 		document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');

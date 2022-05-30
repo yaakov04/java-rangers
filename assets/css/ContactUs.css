@@ -32,13 +32,13 @@ body{
 
 #wrapper-form {
     background-color: #fff;
-    height: 80%;
+
     width: 100%;
     padding: 40px;
     margin-right: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+
     border-radius: 16px;
     -webkit-border-radius: 16px;
     -moz-border-radius: 16px;
@@ -62,12 +62,12 @@ body{
 }
 
 #titulo-form {
-    font-size: 48px;
+    font-size: 35px;
     font-weight: 800;
 }
 
 .label-font {
-    font-size: 30px;
+    font-size: 22px;
     font-weight: 500;
 }
 .form-control {
@@ -89,16 +89,102 @@ body{
     -o-border-radius: 13px;
 }
 
+.form-control-error {
+	font-size: 12px;
+	margin-bottom: 0;
+	opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+
+p.form-control-error {
+    padding-left: 12px;
+}
+
+.form-control-error-activo {
+	opacity: 1;
+}
+
+.formulario__validacion-estado {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+
+.formulario__checkbox {
+	margin-right: 10px;
+}
+
+
+.formulario__mensaje {
+	height: 40px;
+	text-align: center;
+	font-size: 12px;
+	color: #e20d0d;
+	opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+
+.formulario__mensaje-activo {
+	opacity: 1;
+}
+
+.formulario__mensaje p {
+	margin: 0;
+}
+
+.formulario__grupo-btn-enviar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+.formulario__mensaje-exito {
+	margin-top: 5px;
+	font-size: 12px;
+	color: #119200;
+	opacity: 0;
+}
+
+.formulario__mensaje-exito-activo {
+	opacity: 1;
+    transition: opacity .3s ease-in-out;
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+	color: #e20d0d;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #e20d0d;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .form-control {
+	border: 3px solid #e20d0d;
+}
+
+
+
 @media (max-width: 1400px) {
     #wrapper-form {
         background-color: #fff;
-        height: 100%;
+
         width: 100%;
         padding: 40px;
         margin-right: 50px;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+
         border-radius: 16px;
         -webkit-border-radius: 16px;
         -moz-border-radius: 16px;
@@ -107,12 +193,12 @@ body{
     }
 
     #titulo-form {
-        font-size: 38px;
+        font-size: 29px;
         font-weight: 800;
     }
 
     .label-font {
-        font-size: 25px;
+        font-size: 18px;
         font-weight: 500;
     }
 }
@@ -152,16 +238,16 @@ body{
     }
 
     #titulo-form {
-        font-size: 27px;
+        font-size: 20px;
         font-weight: 800;
     }
 
     .label-font {
-        font-size: 18px;
+        font-size: 15px;
         font-weight: 500;
     }
 
-    .boton-formulario {
+    #boton-formulario {
         background-color: #79dae8;
         width: 180px;
         color: #fff;
@@ -183,6 +269,4 @@ body{
         width: 100%;
         padding: 20px;
     }
-
-
 }
