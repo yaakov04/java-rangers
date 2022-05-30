@@ -1,45 +1,151 @@
-//Datos personales
-function guardarDatos(){
-    localStorage.DrName = document.getElementById("formularioDrName").value;
-    localStorage.DrEspecialidad = document.getElementById("formularioDrEspecialidad").value;
-    localStorage.DrCedula = document.getElementById("formularioDrCedula").value;
-    localStorage.DrCedulaEspecial = document.getElementById("formularioDrCedulaEspecial").value;
-    localStorage.DrFoto = document.getElementById("formularioDrFoto").value;
-}
-document.getElementById("botonFormulario1").addEventListener("click", guardarDatos);
+class Doctor {
+    id;
+    img;
+    name; 
+    city; 
+    rating; 
+    especialidad; 
+    descripcion;
+    cedula;
+    cedulaEspecial;
+    universidad;
+    universidadEspecialidad;
+    enfermedad = [];
+    phone;
+    webPage;
+    correo;
+    facebook;
+    instagram;
+    whatsapp;
 
-//Educación
-function guardarDatos2(){
-    localStorage.DrUni = document.getElementById("formularioDrUni").value;
-    localStorage.DrUniEspecialidad = document.getElementById("formularioDrUniEspecialidad").value;
-}
-document.getElementById("botonFormulario2").addEventListener("click", guardarDatos2);
+    constructor (){
+        this.id = Math.random().toString(36).substr(2);
+    }
 
-//Descripcion
-function guardarDatos3(){
-    localStorage.DrDescripcion = document.getElementById("formularioDrDescripcion").value;
-}
-document.getElementById("botonFormulario3").addEventListener("click", guardarDatos3);
+    //Datos personales
+    guardarDatosPersonales(){
+        this.name = document.getElementById("formularioDrName").value;
+        this.especialidad = document.getElementById("formularioDrEspecialidad").value;
+        this.cedula = document.getElementById("formularioDrCedula").value;
+        this.cedulaEspecial = document.getElementById("formularioDrCedulaEspecial").value;
+        this.img = document.getElementById("formularioDrFoto").value;
+    }
 
-//Principales enfermedades que trata
-function guardarDatos4(){
-    localStorage.DrEnfermedad1 = document.getElementById("formularioDrEnfermedad1").value;
-    localStorage.DrEnfermedad2 = document.getElementById("formularioDrEnfermedad2").value;
-    localStorage.DrEnfermedad3 = document.getElementById("formularioDrEnfermedad3").value;
-    localStorage.DrEnfermedad4 = document.getElementById("formularioDrEnfermedad4").value;
-}
-document.getElementById("botonFormulario4").addEventListener("click", guardarDatos4);
+    //Educación
+    guardarDatosEducacion(){
+        this.universidad = document.getElementById("formularioDrUni").value;
+        this.universidadEspecialidad = document.getElementById("formularioDrUniEspecialidad").value;
+        
+    }
 
-//Datos personales
-function guardarDatos5(){
-    localStorage.DrPhone = document.getElementById("formularioDrPhone").value;
-    localStorage.DrWebPage = document.getElementById("formularioDrWebPage").value;
-    localStorage.DrCorreo = document.getElementById("formularioDrCorreo").value;
-    localStorage.DrDireccion = document.getElementById("formularioDrDireccion").value;
-    localStorage.DrFacebook = document.getElementById("formularioDrFacebook").value;
-    localStorage.DrInstagram = document.getElementById("formularioDrInstagram").value;
-    localStorage.DrWhatsapp = document.getElementById("formularioDrWhatsapp").value;
-}
-document.getElementById("botonFormulario5").addEventListener("click", guardarDatos5);
+    //Descripcion
+    guardarDatosDescripcion(){
+        this.descripcion = document.getElementById("formularioDrDescripcion").value;
+        
+    }
 
+    //Principales enfermedades que trata
+    guardarDatosEnfermedades(){
+        this.enfermedad[0] = document.getElementById("formularioDrEnfermedad1").value;
+        this.enfermedad[1] = document.getElementById("formularioDrEnfermedad2").value;
+        this.enfermedad[2] = document.getElementById("formularioDrEnfermedad3").value;
+        this.enfermedad[3] = document.getElementById("formularioDrEnfermedad4").value;
+        
+    }
+
+    //Datos personales
+    guardarDatosPersonales(){
+        this.phone = document.getElementById("formularioDrPhone").value;
+        this.webPage = document.getElementById("formularioDrWebPage").value;
+        this.correo = document.getElementById("formularioDrCorreo").value;
+        this.city = document.getElementById("formularioDrDireccion").value;
+        this.facebook = document.getElementById("formularioDrFacebook").value;
+        this.instagram = document.getElementById("formularioDrInstagram").value;
+        this.whatsapp = document.getElementById("formularioDrWhatsapp").value;
+        
+    }
+
+}
+
+ //Funcion para guardar el array de personas
+ const saveOnLocalStorage = function(arr){
+    localStorage.setItem('doctores', JSON.stringify(arr));
+    console.log(localStorage)
+
+}
+
+//Funcion para obtener datos de localStorage
+const getDoctorsFromLocalStorage = function(){
+    const doctores = localStorage.getItem('doctores');
+    if (doctores != null) {
+        //Si existen regresamos lo que hay en localStorage
+        return JSON.parse(doctores);
+    }
+    //Si no existe regresamos un array vacio
+    return [];
+}
+
+//Agrega el doctor al array o modifica un doctor existente
+const addDoctor = function(arrDoc, doctor){
+    const find = arrDoc.find(doc => doc.id === doctor.id)
+
+    //Si existe
+    if (find) {
+        arrDoc = arrDoc.map(doc =>{
+            if (doc.id === doctor.id) {
+                return doctor;
+            }
+            return doc;
+        });
+    }
+    //Si no existe
+    arrDoc.push(doctor);
+}
+
+// array de doctores
+const doctores = getDoctorsFromLocalStorage();
+
+// objeto de tipo doctor
+const doctor = new Doctor();
+
+
+document.getElementById("botonFormulario1").addEventListener("click", (e) => {
+    e.preventDefault();
+    doctor.guardarDatosPersonales();
+    console.log(doctor)
+    addDoctor(doctores, doctor)
+    saveOnLocalStorage(doctores)
+});
+
+
+document.getElementById("botonFormulario2").addEventListener("click", (e) => {
+    e.preventDefault();
+    doctor.guardarDatosEducacion()
+    addDoctor(doctores, doctor)
+    saveOnLocalStorage(doctores)
+});
+
+
+document.getElementById("botonFormulario3").addEventListener("click", (e) => {
+    e.preventDefault();
+    doctor.guardarDatosDescripcion()
+    addDoctor(doctores, doctor)
+    saveOnLocalStorage(doctores)
+});
+
+
+document.getElementById("botonFormulario4").addEventListener("click", (e) => {
+    e.preventDefault();
+    doctor.guardarDatosEnfermedades()
+    addDoctor(doctores, doctor)
+    saveOnLocalStorage(doctores)
+});
+
+
+document.getElementById("botonFormulario5").addEventListener("click", (e) => {
+    e.preventDefault();
+    doctor.guardarDatosPersonales()
+    addDoctor(doctores, doctor)
+    saveOnLocalStorage(doctores)
+});
 
