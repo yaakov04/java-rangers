@@ -24,19 +24,72 @@
         <section id="portada">
             <div id="wave-portada">
                 <svg width="1728" height="794" viewBox="0 0 1728 794" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path id="path" d="M-979.438 323.78C-800.711 413.675 -627.654 574.803 -449.42 672.529C-195.535 811.829 68.8579 820.244 322.342 675.778C568.677 535.729 696.092 304.542 939.5 131C1155.36 -22.963 1519.04 -61.3704 1728 131V794L-1969.8 794V566.138C-1654.05 242.431 -1311.55 158.616 -979.438 323.78Z" fill="#79DAE8" />
+                    <path id="path"
+                        d="M-979.438 323.78C-800.711 413.675 -627.654 574.803 -449.42 672.529C-195.535 811.829 68.8579 820.244 322.342 675.778C568.677 535.729 696.092 304.542 939.5 131C1155.36 -22.963 1519.04 -61.3704 1728 131V794L-1969.8 794V566.138C-1654.05 242.431 -1311.55 158.616 -979.438 323.78Z"
+                        fill="#79DAE8" />
                 </svg>
             </div>
-
+        
             <div id="portada-container" class="d-flex align-items-center">
                 <div id="port-cont-1">
                     <h1 id="tittle-portada">Médicos especialistas muy cerca de ti</h1>
                     <h2 id="subtittle-portada">Consigue tu cita de manera rápida y sencilla</h2>
+                    <!--*Aqui empieza EL BUSCADOR XL -->
+                    <div class="search-container">
+                        <!--Div de buscar por especialidad-->
+                        <div class="especialidad-wrapper">
+                            <div class="esteto-icon-wrapper">
+                                <img class="esteto-icon" src="./assets/img/esteto.svg" alt="estetoscopio">
+                            </div>
+        
+                            <div class="especialidad-search">
+                                <input type="search" class="buscador" placeholder="Especialidad o Nombre ">
+        
+                            </div>
+        
+                        </div>
+                        <!--Div de buscar por ciudad -->
+                        <div class="ciudad-wrapper">
+                            <div class="ciudad-icon-wrapper">
+        
+                                <img class="esteto-icon" src="./assets/img/ciudad1.svg" alt="ciudad">
+        
+                            </div>
+                            <div class="ciudad-search">
+                                <input type="search" class="ciudad" placeholder="Ciudad">
+                            </div>
+                            <div class="lens-icon-wrapper">
+                                <img class="lens-icon" src="./assets/img/lens.svg" alt="buscar">
+                            </div>
+                        </div>
+                    </div>
+                    <!--*Aqui empieza el buscador Mobile  -->
+                    <div class="m-search-container">
+                        <div class="m-especialidad-wrapper">
+                            <div class="m-esteto-icon-wrapper">
+                                <img class="m-esteto-icon" src="/assets/img/esteto.svg" alt="estetoscopio">
+                            </div>
+                            <div class="m-especialidad-search">
+                                <input type="search" class="m-buscador" placeholder="Especialidad">
+                            </div>
+                        </div>
+                        <div class="m-ciudad-wrapper">
+                            <div class="m-ciudad-icon-wrapper">
+                                <img class="m-ciudad-icon" src="/assets/img/ciudad1.svg" alt="ciudad">
+                            </div>
+                            <div class="m-ciudad-search">
+                                <input type="search" class="ciudad" placeholder="Ciudad">
+                            </div>
+                            <div class="m-lens-icon-wrapper">
+                                <img class="m-lens-icon" src="/assets/img/lens.svg" alt="buscar">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                <div id="port-cont-2">
-                    <img src="./assets/img/img-portada-home 1.png" alt="doctor en tu ciudad" />
-                </div>
+                <!--*Aqui termina el buscador Mobile  -->
+            </div>
+            <div id="port-cont-2">
+                <img class="img-doc" src="./assets/img/img-portada-home 1.png" alt="doctor en tu ciudad" />
             </div>
         </section>
         <!--/Portada-->
