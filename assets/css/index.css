@@ -52,7 +52,7 @@ body {
 #subtittle-portada {
     font-size: 30px;
     font-family:'Lexend', sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     z-index: 15;
     position: relative;
     z-index: 15;
@@ -330,4 +330,11 @@ body {
        
         margin-top: 100px;
     }
+
+    .img-doc{
+        position: absolute;
+        left: 0;
+    }
+
+
 }
