@@ -326,14 +326,16 @@ body {
 
 
 @media (max-width:480px){
+    
     #port-cont-1{
-       
-        margin-top: 100px;
+       height: 90%;
+        margin-top: 10px;
     }
 
     .img-doc{
         position: absolute;
         left: 0;
+        height: 260px;
     }
 
 
