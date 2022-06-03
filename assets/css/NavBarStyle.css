@@ -134,3 +134,19 @@ footer{
     display: flex;
   justify-content: center;
 }
+
+/**Dropdown**/
+.btn_drop{
+    background-color: transparent;
+    color: grey;
+    border: none;
+    border-radius: 0;
+}
+
+/**Modal**/
+.btn_modal{
+    background-color: transparent;
+    color: black;
+    border: none;
+    border-radius: 0;
+}
