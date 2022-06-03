@@ -114,3 +114,15 @@
         transform: translateX(100%);
     }
 }
+
+.drop1_btn_btn-secondary_dropdown-toggle{
+    background-color: transparent;
+    border: none;
+    color: gray;
+}
+
+.btn_modal{
+    background-color: transparent;
+    border: none;
+    color: black;
+}
