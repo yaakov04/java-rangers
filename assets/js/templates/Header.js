@@ -94,7 +94,7 @@ const Header = function(){
                                   Soy Paciente
                                 </button>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                  <a class="dropdown-item" href="#">Ingresar
+                                  <a class="dropdown-item" href="#">
                                   
                                   <!-- Button trigger modal -->
                                   <button type="button" class="btn_modal" data-toggle="modal" data-target="#exampleModal">
