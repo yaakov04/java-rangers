@@ -1,6 +1,6 @@
 .sticky {
     position: fixed;
-    z-index: 999999;
+    z-index: 20;
     width: 100% !important;
   }
 
