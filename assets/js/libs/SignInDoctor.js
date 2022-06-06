@@ -1,3 +1,8 @@
+import Doctor from "../model/Doctor.js";
+import getDoctorsFromLocalStorage from "./getDoctorsFromLocalStorage.js";
+import addDoctor from "./addDoctor.js";
+import saveOnLocalStorage from "./saveOnLocalStorage.js";
+
 const getValues = function(form){
     const nodeList = form.querySelectorAll('input'); // Regresa una lista de nodos
     const inputs = [... nodeList]; // lo convierto a un array
@@ -15,9 +20,6 @@ const getValues = function(form){
              key = input.name;
              value = input.value;
             
-        }else if(input.hasAttribute('data-ignore-value')){
-            key = input.name;
-            value = input.checked
         }
         obj[key] = value;
     });
@@ -33,7 +35,14 @@ const getValues = function(form){
 
 
 const SignInDoctor = function(form){
-    getValues(form)
+    // array de doctores
+    const doctores = getDoctorsFromLocalStorage();
+
+    const doctor = new Doctor();
+    doctor.signIn(getValues(form));
+
+    addDoctor(doctores, doctor);
+    saveOnLocalStorage(doctores);
 }
 
 export default SignInDoctor;
