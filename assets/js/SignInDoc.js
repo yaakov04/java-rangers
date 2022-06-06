@@ -1,3 +1,5 @@
+import SignInDoctor from "./libs/SignInDoctor.js";
+
 const formulario = document.getElementById('formulario'); //Se define una constante para poder acceder al formulario
 const inputs = document.querySelectorAll('#formulario input'); // Se define una constante para poder acceder a todos los inputs del formulario
 
@@ -89,12 +91,14 @@ formulario.addEventListener('submit', (e) => {
 
 	
 	if(campos.nombre && campos.apellido1 &&  campos.apellido2 && campos.correo && campos.password && terminos.checked){
-		formulario.reset();
+		//formulario.reset();
 		document.getElementById('formulario__mensaje').classList.remove('formulario__mensaje-activo');
 		document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
 		setTimeout(() => {
 			document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo');
 		}, 4000);
+		
+		SignInDoctor(formulario);
 	} else {
 		document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
 	}
