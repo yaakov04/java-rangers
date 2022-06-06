@@ -4,7 +4,7 @@ const Header = function(){
 
     // al innerHTML del nodo creado le inserto el codigo html del componente
     header.innerHTML= `
-    <div class="container">
+    <div class="container-header sticky">
             <nav class="navbar navbar-expand-lg navbar-light bg-white header-space flex-nowrap">
                 <a class="navbar-brand color-azul" href="index.html">
                     <svg width="262" height="45" viewBox="0 0 262 60" fill="none" xmlns="http://www.w3.org/2000/svg">

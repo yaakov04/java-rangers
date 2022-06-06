@@ -1,0 +1,52 @@
+.Portada-profile{
+    width: 100%;
+    height: 86vh;
+    background-color: aquamarine;
+}
+
+.portada-container{
+    width: 100%;
+    height: 100%;
+}
+
+.portada-wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.port-cont1{
+    width: 40%;
+    height: 100%;
+    position: relative;
+}
+
+.img-profile-wrapper{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.img-profile-page{
+    max-height: 100%;
+    width: 100%;
+    object-fit: fill;
+    object-position: 20% 10%;
+}
+
+.profile-banner{
+    display: block;
+    max-width: 104%;
+    position: absolute;
+    bottom: 0;
+    max-height: 198px;
+}
+
+
+.port-cont2{
+    width: 60%;
+    height: 100%;
+}
+
