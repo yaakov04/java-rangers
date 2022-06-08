@@ -1,238 +1,359 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doctorfy</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--google fonts-->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!--google fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@200;400;600;700&display=swap" rel="stylesheet"><!--google fonts-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" /><!--bootstrap-->
-    <link rel="stylesheet" href="./assets/css/NavBarStyle.css" /> <!--estilos header y footer-->
-    <link rel="stylesheet" href="./assets/css/ContactUs.css" /><!--estilos generales-->
-    <link rel="icon" type="image/jpg" href="./assets/img/icono2.png"> <!--favicon-->
-    <link rel="stylesheet" href="./assets/css/formulario.css" />
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Doctorfy</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <!--google fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <!--google fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@200;400;600;700&display=swap" rel="stylesheet" />
+        <!--google fonts-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
+        <!--bootstrap-->
+        <link rel="stylesheet" href="./assets/css/NavBarStyle.css" />
+        <!--estilos header y footer-->
+        <link rel="stylesheet" href="./assets/css/ContactUs.css" />
+        <!--estilos generales-->
+        <link rel="icon" type="image/jpg" href="./assets/img/icono2.png" />
+        <!--favicon-->
+        <link rel="stylesheet" href="./assets/css/formulario.css" />
+    </head>
+    <body>
+        <!--header-->
+        <header id="header-wrapper" class="bg-white"></header>
+        <!--/header-->
 
-    <!--header-->
-    <header id="header-wrapper" class="bg-white"></header>
-    <!--/header-->
+        <!--main-->
+        <main>
+            <div class="container">
+                <h1 id="profile-title">PERFIL</h1>
 
-    <!--main-->
-    <main>
-        
-        <div class="container" >
-            <h1 id="profile-title">PERFIL</h1>
-
-            <!--ROW DROPDOWN-->
-            <div class="accordion" id="accordionExample">
-                <div class="card">
-                  <div class="card-header" id="headingOne">
-                    <h2 class="mb-0">
-                      <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        <h1 class="heading2-perfildoc">Datos principales</h1>
-                      </button>
-                    </h2>
-                  </div>
-                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                    <div class="card-body">
-                        <!--PRIMER FORMULARIO-->
-                        <form>
-                            
-                             <div class="d-flex">
-                                 <div class="form-group">
-                                     <label class="label-font" for="formularioDrName"> Nombre </label>
-                                     <input type="text" class="form-control" id="formularioDrName" placeholder="Nombre" minlength="10" />
-                                 </div>
-                                 <div class="form-group ml-5">
-                                     <label class="label-font" for="formularioDrCedula"> Cédula profesional </label>
-                                     <input type="text" class="form-control" id="formularioDrCedula" placeholder="Cédula profesional" minlength="10" />
-                                 </div>
-                             </div>
-                             <div class="d-flex">
-                                 <div class="form-group">
-                                     <label class="label-font" for="formCoformularioDrEspecialidadntraseña"> Especialidad </label>
-                                     <input type="text" class="form-control" id="formularioDrEspecialidad" placeholder="Especialidad" minlength="10" />
-                                 </div>
-                                 <div class="form-group ml-5">
-                                     <label class="label-font" for="formularioDrCedulaEspecial"> Cédula Especialidad </label>
-                                     <input type="text" class="form-control" id="formularioDrCedulaEspecial" placeholder="Cédula especialidad" minlength="10" />
-                                 </div>
-                             </div>
-                             <div class="form-group">
-                                 <label for="formularioDrFoto">Sube tu foto de perfil</label>
-                                 <input type="file" class="form-control-file" id="formularioDrFoto">
-                               </div>
-                             <div>
-                                 <button type="submit" id="botonFormulario1" class="boton-formulario">Guardar</button>
-                             </div> 
-                         </form> 
+                <!--ROW DROPDOWN-->
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <h1 class="heading2-perfildoc">Datos principales</h1>
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <!--PRIMER FORMULARIO-->
+                                <form>
+                                    <div class="d-flex">
+                                        <div class="form-group w-50">
+                                            <label class="label-font" for="formularioDrName"> Nombre </label>
+                                            <input type="text" class="form-control" id="formularioDrName" placeholder="Nombre" minlength="10" />
+                                        </div>
+                                        <div class="form-group w-50 ml-5">
+                                            <label class="label-font" for="formularioPrimerApellido">Apellido Paterno</label>
+                                            <input type="text" class="form-control" id="formularioPrimerApellido" placeholder="Apellido Paterno" minlength="10" />
+                                        </div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="form-group w-50">
+                                            <label class="label-font" for="formularioSegundoApellido">Apellido Materno</label>
+                                            <input type="text" class="form-control" id="formularioSegundoApellido" placeholder="Apellido Materno" minlength="10" />
+                                        </div>
+                                        <div class="form-group w-50 ml-5">
+                                            <label class="label-font" for="formularioDrCedula"> Cédula profesional </label>
+                                            <input type="text" class="form-control" id="formularioDrCedula" placeholder="Cédula profesional" minlength="10" />
+                                        </div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="form-group w-50">
+                                            <label class="label-font" for="formCoformularioDrEspecialidadntraseña"> Especialidad </label>
+                                            <input type="text" class="form-control" id="formularioDrEspecialidad" placeholder="Especialidad" minlength="10" />
+                                        </div>
+                                        <div class="form-group w-50 ml-5">
+                                            <label class="label-font" for="formularioDrCedulaEspecial"> Cédula Especialidad </label>
+                                            <input type="text" class="form-control" id="formularioDrCedulaEspecial" placeholder="Cédula especialidad" minlength="10" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="formularioDrFoto">Sube tu foto de perfil</label>
+                                        <input type="file" class="form-control-file" id="formularioDrFoto" />
+                                    </div>
+                                    <div>
+                                        <button type="submit" id="botonFormulario1" class="boton-formulario">Guardar</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
+
                 <!--ROW DROPDOWN-->
                 <div class="card">
-                  <div class="card-header" id="headingTwo">
-                    <h2 class="mb-0">
-                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        <h1 class="heading2-perfildoc">Educación</h1>
-                      </button>
-                    </h2>
-                  </div>
-                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                    <div class="card-body">
-                        <!--SEGUNDO FORMULARIO-->
-                        <form>
-                            <div class="form-group">
-                                <label class="label-font" for="formContraseña"> Egresado de la univerdad</label>
-                                <input type="text" class="form-control" id="formularioDrUni" placeholder="" minlength="10" />
-                            </div>
-                            <div class="form-group">
-                                <label class="label-font" for="formContraseña"> Especialista médico por la </label>
-                                <input type="text" class="form-control" id="formularioDrUniEspecialidad" placeholder="" minlength="10" />
-                            </div>
-                            <div>
-                                <button type="submit" id="botonFormulario2" class="boton-formulario">Guardar</button>
-                            </div> 
-                        </form> 
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <h1 class="heading2-perfildoc">Educación</h1>
+                            </button>
+                        </h2>
                     </div>
-                  </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <!--SEGUNDO FORMULARIO-->
+                            <form>
+                                <div class="form-group">
+                                    <label class="label-font" for="formContraseña"> Egresado de la univerdad</label>
+                                    <input type="text" class="form-control" id="formularioDrUni" placeholder="" minlength="10" />
+                                </div>
+                                <div class="form-group">
+                                    <label class="label-font" for="formContraseña"> Especialista médico por la </label>
+                                    <input type="text" class="form-control" id="formularioDrUniEspecialidad" placeholder="" minlength="10" />
+                                </div>
+                                <div>
+                                    <button type="submit" id="botonFormulario2" class="boton-formulario">Guardar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
+
                 <!--ROW DROPDWON-->
                 <div class="card">
-                  <div class="card-header" id="headingThree">
-                    <h2 class="mb-0">
-                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        <h1 class="heading2-perfildoc">Escribe una reseña o biografía</h1>
-                      </button>
-                    </h2>
-                  </div>
-                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                    <div class="card-body">
-                      <!--Tercer formulario-->
-                      <form>
-                         <div class="form-group">
-                             <label for="exampleFormControlTextarea1">Admite hasta n caracteres</label>
-                             <textarea class="form-control" id="formularioDrDescripcion" rows="3"></textarea>
-                         </div>
-                         <div>
-                             <button type="submit" id="botonFormulario3" class="boton-formulario">Guardar</button>
-                         </div>
-                     </form>
+                    <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <h1 class="heading2-perfildoc">Escribe una reseña o biografía</h1>
+                            </button>
+                        </h2>
                     </div>
-                  </div>
-                  <!--Cuarto formulario-->
-                  <div class="card">
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <!--Tercer formulario-->
+                            <form>
+                                <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Admite hasta n caracteres</label>
+                                    <textarea class="form-control" id="formularioDrBiografia" rows="3"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Escribe una breve descripción</label>
+                                    <textarea class="form-control" id="formularioDrDescripcion" rows="3" placeholder="Ej: Médico Internista con especialidad en Cardiología."></textarea>
+                                </div>
+                                <div>
+                                    <button type="submit" id="botonFormulario3" class="boton-formulario">Guardar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Cuarto formulario-->
+                <div class="card">
                     <div class="card-header" id="heading4">
-                      <h2 class="mb-0">
-                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                            <h1 class="heading2-perfildoc">Escribe 4 enfermedades donde te especializas</h1>
-                        </button>
-                      </h2>
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                <h1 class="heading2-perfildoc">Escribe 4 enfermedades donde te especializas</h1>
+                            </button>
+                        </h2>
                     </div>
                     <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordionExample">
-                      <div class="card-body">
-                         <!--Cuarto formulario-->
-                         <form>
-                            <div class="d-flex">
-                                <div class="form-group">
-                                    <label class="label-font" for="formContraseña"> Enfermedad 1</label>
-                                    <input type="text" class="form-control" id="formularioDrEnfermedad1" placeholder="Ej. Diabetes" minlength="10" />
+                        <div class="card-body">
+                            <!--Cuarto formulario-->
+                            <form>
+                                <div class="d-flex">
+                                    <div class="form-group w-50">
+                                        <label class="label-font" for="formContraseña"> Enfermedad 1</label>
+                                        <input type="text" class="form-control" id="formularioDrEnfermedad1" placeholder="Ej. Diabetes" minlength="10" />
+                                    </div>
+                                    <div class="form-group w-50 ml-5">
+                                        <label class="label-font" for="formContraseña"> Enfermedad 2</label>
+                                        <input type="text" class="form-control" id="formularioDrEnfermedad2" placeholder="Ej. Infertilidad" minlength="10" />
+                                    </div>
                                 </div>
-                                <div class="form-group ml-5">
-                                    <label class="label-font" for="formContraseña"> Enfermedad 2</label>
-                                    <input type="text" class="form-control" id="formularioDrEnfermedad2" placeholder="Ej. Infertilidad" minlength="10" />
+                                <div class="d-flex">
+                                    <div class="form-group w-50">
+                                        <label class="label-font" for="formContraseña"> Enfermedad 3</label>
+                                        <input type="text" class="form-control" id="formularioDrEnfermedad3" placeholder="Ej. Hernia de disco" minlength="10" />
+                                    </div>
+                                    <div class="form-group w-50 ml-5">
+                                        <label class="label-font" for="formContraseña"> Enfermedad 4</label>
+                                        <input type="text" class="form-control" id="formularioDrEnfermedad4" placeholder="Ej. Arritmia cardiaca" minlength="10" />
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="d-flex">
-                                <div class="form-group">
-                                    <label class="label-font" for="formContraseña"> Enfermedad 3</label>
-                                    <input type="text" class="form-control" id="formularioDrEnfermedad3" placeholder="Ej. Hernia de disco" minlength="10" />
+                                <div>
+                                    <button type="submit" id="botonFormulario4" class="boton-formulario">Guardar</button>
                                 </div>
-                                <div class="form-group ml-5">
-                                    <label class="label-font" for="formContraseña"> Enfermedad 4</label>
-                                    <input type="text" class="form-control" id="formularioDrEnfermedad4" placeholder="Ej. Arritmia cardiaca" minlength="10" />
-                                </div>
-                            </div>
-                            <div>
-                               <button type="submit" id="botonFormulario4" class="boton-formulario">Guardar</button>
-                           </div>
-                        </form> 
-                      </div>
-                      <!--Row Dropdown-->
+                            </form>
+                        </div>
                     </div>
-                    <div class="card">
-                      <div class="card-header" id="headingThree">
+                </div>
+
+                <!--ROW DROPDWON-->
+                <div class="card">
+                    <div class="card-header" id="headingThree">
                         <h2 class="mb-0">
-                          <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
-                            <h1 class="heading2-perfildoc">Información de contacto</h1>
-                          </button>
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapseThree">
+                                <h1 class="heading2-perfildoc">Información de contacto</h1>
+                            </button>
                         </h2>
-                      </div>
-                      <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordionExample">
+                    </div>
+                    <div id="collapse5" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                         <div class="card-body">
                             <form>
                                 <div class="d-flex">
-                                   <div class="form-group">
-                                       <label class="label-font" for="formContraseña"> Teléfono</label>
-                                       <input type="tel" class="form-control" id="formularioDrPhone" placeholder="Teléfono" minlength="10" />
-                                   </div>
-                                   <div class="form-group ml-5">
-                                       <label class="label-font" for="formContraseña"> Página web</label>
-                                       <input type="url" class="form-control" id="formularioDrWebPage" placeholder="Página web" minlength="10" />
-                                   </div>
-                               </div>
-                               <div class="d-flex">
-                                   <div class="form-group">
-                                       <label class="label-font" for="formContraseña"> Correo</label>
-                                       <input type="email" class="form-control" id="formularioDrCorreo" placeholder="Correo electrónico" minlength="10" />
-                                   </div>
-                                   <div class="form-group ml-5">
-                                       <label class="label-font" for="formContraseña"> Dirección</label>
-                                       <input type="text" class="form-control" id="formularioDrDireccion" placeholder="Dirección" minlength="10" />
-                                   </div>
-                               </div>
-                               <div class="d-flex">
-                                   <div class="form-group">
-                                       <label class="label-font" for="formContraseña"> Facebook</label>
-                                       <input type="url" class="form-control" id="formularioDrFacebook" placeholder="Facebook" minlength="10" />
-                                   </div>
-                                   <div class="form-group ml-5">
-                                       <label class="label-font" for="formContraseña"> Instagram</label>
-                                       <input type="url" class="form-control" id="formularioDrInstagram" placeholder="Instagram" minlength="10" />
-                                   </div>
-                               </div>
-                               <div class="d-flex">
-                                   <div class="form-group">
-                                       <label class="label-font" for="formContraseña"> Whatsapp</label>
-                                       <input type="tel" class="form-control" id="formularioDrWhatsapp" placeholder="Whatsapp" minlength="10" />
-                                   </div>
-                               </div>
-                               <div>
-                                   <button type="submit" id="botonFormulario5" class="boton-formulario">Guardar</button>
-                               </div>
+                                    <div class="form-group w-50">
+                                        <label class="label-font" for="formularioDrPhone"> Teléfono</label>
+                                        <input type="tel" class="form-control" id="formularioDrPhone" placeholder="Teléfono" minlength="10" />
+                                    </div>
+                                    <div class="form-group w-50 ml-5">
+                                        <label class="label-font" for="formularioDrWebPage"> Página web</label>
+                                        <input type="url" class="form-control" id="formularioDrWebPage" placeholder="Página web" minlength="10" />
+                                    </div>
+                                </div>
+
+                                <div class="d-flex">
+                                    <div class="form-group w-50">
+                                        <label class="label-font" for="formularioDrCorreo"> Correo</label>
+                                        <input type="email" class="form-control" id="formularioDrCorreo" placeholder="Correo electrónico" minlength="10" />
+                                    </div>
+                                    <div class="form-group w-50 ml-5">
+                                      <label class="label-font" for="formularioDrEstado"> Estado</label>
+                                        <select id="formularioDrEstado" class="custom-select">
+                                            <option value="no">Seleccione uno...</option>
+                                            <option value="Aguascalientes">Aguascalientes</option>
+                                            <option value="Baja California">Baja California</option>
+                                            <option value="Baja California Sur">Baja California Sur</option>
+                                            <option value="Campeche">Campeche</option>
+                                            <option value="Chiapas">Chiapas</option>
+                                            <option value="Chihuahua">Chihuahua</option>
+                                            <option value="CDMX">Ciudad de México</option>
+                                            <option value="Coahuila">Coahuila</option>
+                                            <option value="Colima">Colima</option>
+                                            <option value="Durango">Durango</option>
+                                            <option value="Estado de México">Estado de México</option>
+                                            <option value="Guanajuato">Guanajuato</option>
+                                            <option value="Guerrero">Guerrero</option>
+                                            <option value="Hidalgo">Hidalgo</option>
+                                            <option value="Jalisco">Jalisco</option>
+                                            <option value="Michoacán">Michoacán</option>
+                                            <option value="Morelos">Morelos</option>
+                                            <option value="Nayarit">Nayarit</option>
+                                            <option value="Nuevo León">Nuevo León</option>
+                                            <option value="Oaxaca">Oaxaca</option>
+                                            <option value="Puebla">Puebla</option>
+                                            <option value="Querétaro">Querétaro</option>
+                                            <option value="Quintana Roo">Quintana Roo</option>
+                                            <option value="San Luis Potosí">San Luis Potosí</option>
+                                            <option value="Sinaloa">Sinaloa</option>
+                                            <option value="Sonora">Sonora</option>
+                                            <option value="Tabasco">Tabasco</option>
+                                            <option value="Tamaulipas">Tamaulipas</option>
+                                            <option value="Tlaxcala">Tlaxcala</option>
+                                            <option value="Veracruz">Veracruz</option>
+                                            <option value="Yucatán">Yucatán</option>
+                                            <option value="Zacatecas">Zacatecas</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex">
+                                    <div class="form-group w-50">
+                                        <label class="label-font" for="formularioDrCiudad"> Ciudad</label>
+                                        <input type="text" class="form-control" id="formularioDrCiudad" placeholder="Dirección" minlength="10" />
+                                    </div>
+                                    <div class="form-group w-50 ml-5">
+                                        <label class="label-font" for="formularioDrColonia"> Colonia</label>
+                                        <input type="text" class="form-control" id="formularioDrColonia" placeholder="Dirección" minlength="10" />
+                                    </div>
+                                </div>
+
+                                <div class="d-flex">
+                                    <div class="form-group w-50">
+                                        <label class="label-font" for="formularioDrDirreccion"> Dirección</label>
+                                        <input type="url" class="form-control" id="formularioDrDirreccion" placeholder="Dirección" minlength="10" />
+                                    </div>
+                                    <div class="form-group w-50 ml-5">
+                                        <label class="label-font" for="formContraseña"> Instagram</label>
+                                        <input type="url" class="form-control" id="formularioDrInstagram" placeholder="Instagram" minlength="10" />
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <div class="form-group w-50">
+                                        <label class="label-font" for="formContraseña"> Whatsapp</label>
+                                        <input type="tel" class="form-control" id="formularioDrWhatsapp" placeholder="Whatsapp" minlength="10" />
+                                    </div>
+                                    <div class="form-group w-50 ml-5">
+                                      <label class="label-font" for="formContraseña"> Facebook</label>
+                                      <input type="url" class="form-control" id="formularioDrFacebook" placeholder="Facebook" minlength="10" />
+                                  </div>
+                                </div>
+                                <div>
+                                    <button type="submit" id="botonFormulario5" class="boton-formulario">Guardar</button>
+                                </div>
                             </form>
                         </div>
-                      </div>
+                    </div>
                 </div>
-              </div>
-         </div>
-    </main>
-    <!--main-->
 
-    <!--footer-->
-    <footer class="bg-white" id="footer-1"></footer>
-    <!--footer-->
 
-    <!--Menu hamburguesa-->
-    <div id="hamburger-menu" class="main_hamburger_menu_container"></div>
-    <!--/Menu hamburguesa-->
+                <!--ROW DROPDWON-->
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseGallery" aria-expanded="false" aria-controls="collapseThree">
+                                <h1 class="heading2-perfildoc">Galeria</h1>
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseGallery" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <!--Tercer formulario-->
+                            <form>
+                                <div class="d-flex mb-3">
+                                    <div class="custom-file w-50">
+                                       <input type="file" class="custom-file-input" id="formularioDrGaleria1" lang="es">
+                                       <label class="custom-file-label" for="customFileLang">Seleccionar Fotografía 1</label>
+                                    </div>
+                                    <div class="custom-file w-50 ml-5">
+                                       <input type="file" class="custom-file-input" id="formularioDrGaleria2" lang="es">
+                                       <label class="custom-file-label" for="customFileLang">Seleccionar Fotografía 2</label>
+                                    </div>
+                                 
+                                 </div>
 
-    <script src="./assets/js/main.js" type="module"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-    <script src="./assets/js/formularioLocalStorage.js"></script>
-</body>
+                                 <div class="d-flex">
+                                    <div class="custom-file w-50">
+                                       <input type="file" class="custom-file-input" id="formularioDrGaleria3" lang="es">
+                                       <label class="custom-file-label" for="customFileLang">Seleccionar Fotografía 3</label>
+                                    </div>
+                                    <div class="custom-file w-50 ml-5">
+                                       <input type="file" class="custom-file-input" id="formularioDrGaleria4" lang="es">
+                                       <label class="custom-file-label" for="customFileLang">Seleccionar Fotografía 4</label>
+                                    </div>
+                                 
+                                 </div>
+                                <div class="mt-3">
+                                    <button type="submit" id="botonFormulario6" class="boton-formulario">Guardar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+        <!--main-->
+
+        <!--footer-->
+        <footer class="bg-white" id="footer-1"></footer>
+        <!--footer-->
+
+        <!--Menu hamburguesa-->
+        <div id="hamburger-menu" class="main_hamburger_menu_container"></div>
+        <!--/Menu hamburguesa-->
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+        <script src="./assets/js/formularioLocalStorage.js" type="module"></script>
+        <script src="./assets/js/main.js" type="module"></script>
+    </body>
 </html>

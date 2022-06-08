@@ -1,3 +1,17 @@
+.sticky {
+    position: fixed;
+    z-index: 20;
+    width: 100% !important;
+  }
+
+  .container-header {
+    box-shadow: 0px 3px 10px -1px rgba(0,0,0,0.40);
+  }
+
+  main {
+    padding-top: 100px;
+  }
+
 .bg-azul {
     background-color: #79d9e8;
 }
@@ -14,7 +28,7 @@
 }
 
 .main_hamburger_menu_container {
-    position: absolute;
+    position: fixed;
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.144);
@@ -133,4 +147,20 @@ footer{
 #logo {
     display: flex;
   justify-content: center;
+}
+
+/**Dropdown**/
+.btn_drop{
+    background-color: transparent;
+    color: grey;
+    border: none;
+    border-radius: 0;
+}
+
+/**Modal**/
+.btn_modal{
+    background-color: transparent;
+    color: black;
+    border: none;
+    border-radius: 0;
 }
