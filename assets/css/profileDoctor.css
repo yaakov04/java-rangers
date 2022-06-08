@@ -1,6 +1,6 @@
 .Portada-profile {
     width: 100%;
-    height: 3000px;
+    height: 3200px;
 }
 
 .portada-container { 
@@ -105,8 +105,8 @@
 .sub-logo-especialidad {
     width: 120px;
     position: absolute;
-    right: 24%;
-    top: 24%;
+    right: 12%;
+    top: 12%;
 }
 
 .main-container-profile {
@@ -227,10 +227,9 @@
     height: 100%;
 }
 
-/* s
-s
-s */
 
+
+/* *GALERIA */
 img {
 	max-width: 100%;
 }
@@ -402,16 +401,15 @@ img {
     text-decoration: none;
     text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
   }
-  
+  /* *GALERIA */
 
-
-
-/* s */
-/* s */
-/* s */
 
 
 @media (max-width:1200px) {
+
+    .Portada-profile {
+      height: 2800px;
+    }
 
     .name-doctor-profile-card {
         font-size: 24px;
@@ -425,7 +423,159 @@ img {
         padding-bottom: 5px;
     }
 
+    .subtitle-profile{
+      font-size: 26px;
+    }
+
+    .name-doctor-profile{
+      font-size: 26px;
+    }
+
+
+    .items-enfermedades{
+      font-size: 22px;
+      width: 230px;
+    }
+
+    .especialidad-description-uni{
+      font-size: 24px;
+    }
+
+    .sub-logo-especialidad {
+      width: 90px;
+      position: absolute;
+      right: 8%;
+      top: 8%;
+  }
 }
 
 
-@media (max-width:910px) {}
+@media (max-width:910px) {
+
+  .Portada-profile {
+    height: 100%;
+  }
+
+    .portada-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: Column;
+    }
+
+    .port-cont1 {
+    width: 50%;
+    height: 100%;
+    display: block;
+    margin: auto;
+    }
+
+    .port-cont2 {
+      width: 100%;
+      height: 100%;
+      }
+}
+
+@media (max-width:710px) {
+
+  .enfermedades-4{
+    flex-direction: column;
+  }
+
+
+  .items-enfermedades{
+    min-width: 340px;
+  }
+  
+}
+
+@media (max-width:588px) {
+
+  .port-cont1 {
+    width: 80%;
+    height: 100%;
+    display: block;
+    margin: auto;
+    }
+  
+  .perfil-container-profile{
+    margin: 0rem;
+  }
+
+  .sub-logo-especialidad {
+    width: 90px;
+    position: absolute;
+    right: 18%;
+    top: 8%;
+}
+
+  .especialidad-container {
+    margin: .8rem;
+  }
+
+ .biografia-container {
+   margin: .8rem;
+ }
+
+ .galeria-container {
+  margin: .8rem;
+}
+
+  .enfermedades-4-container{
+    justify-content: center;
+  }
+
+ .enfermedades-4 {
+    text-align: center;
+ }
+
+ .enfermedades1-2{
+   width: 100%;
+   margin: 0px;
+ }
+
+   .enfermedades3-4{
+  width: 100%;
+  margin: 0px;
+  }
+
+    
+    .items-enfermedades {
+      
+      width: 100%;
+  }
+
+}
+
+
+@media (max-width:492px) {
+
+  .sub-logo-especialidad {
+    width: 90px;
+    position: absolute;
+    right: 7%;
+    top: 1%;
+}
+  .name-doctor-profile-card{
+    font-size: 22px;
+  }
+
+  .especialidad-profile-card{
+    font-size: 20px;
+  }
+
+  .star-rate{
+    font-size: 20px;
+  }
+
+  .zoom-image {
+    max-height: 100%;
+    margin: auto;
+    transform: scale(95%);
+    -webkit-transform: scale(95%);
+    -moz-transform: scale(95%);
+    -ms-transform: scale(95%);
+    -o-transform: scale(95%);
+}
+
+}
