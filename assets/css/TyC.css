@@ -1,0 +1,55 @@
+
+body {
+    font-family:'Lexend', sans-serif;
+}
+
+#containerTyC{
+   background-color: #e8f9fd;
+   margin: 80px;
+   padding: 50px;
+}
+
+#text_TyC{
+    font-family: 'Lexend', sans-serif;
+    text-align: justify;
+    font-size: 15px;
+
+}
+
+#title-tyc{
+font-size: 16px;
+}
+
+
+@media (max-width: 800px){
+    #containerTyC{
+        background-color: #e8f9fd;
+        margin: 100px;
+        padding: 70px;
+     }
+     #text_TyC{
+         font-family: 'Lexend', sans-serif;
+         text-align: justify;
+         font-size: 13px;
+     }
+     #title-tyc{
+        font-size: 14px;
+        }
+}
+
+@media (max-width: 480px){
+    #containerTyC{
+        background-color: #e8f9fd;
+        margin: 120px;
+        padding: 90px;
+     }
+
+     #text_TyC{
+         font-family: 'Lexend', sans-serif;
+         text-align: justify;
+         font-size: 11px;
+     }
+     #title-tyc{
+        font-size: 12px;
+        }
+}

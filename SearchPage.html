@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Doctorfy</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com"> <!--google fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!--google fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@200;400;600;700&display=swap" rel="stylesheet"><!--google fonts-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" /><!--bootstrap-->
+        <link rel="icon" type="image/jpg" href="./assets/img/icono2.png"> <!--favicon-->
+        <link rel="stylesheet" href="./assets/css/NavBarStyle.css" /> <!--estilos header y footer-->
+        <link rel="stylesheet" href="./assets/css/DrCards.css"> <!--estilos de cartas-->
+        <link rel="stylesheet" href="./assets/css/SearchPage.css">
+        
+    </head>
+    <body>
+        <!--header-->
+        <header id="header-wrapper" class="bg-white"></header>
+        <!--/header-->
+        <main>
+
+        <!-- Cards -->
+        <div id="cardCreate" class="container">
+            <!--search-container-->
+<section class="search-container-inner">
+    <!--*Aqui empieza EL BUSCADOR XL -->
+    <div class="search-container">
+        <!--Div de buscar por especialidad-->
+        <div class="especialidad-wrapper">
+            <div class="esteto-icon-wrapper">
+                <img class="esteto-icon" src="./assets/img/esteto.svg" alt="estetoscopio">
+            </div>
+
+            <div class="especialidad-search">
+                <input id="query" type="search" class="buscador" placeholder="Especialidad o Nombre ">
+
+            </div>
+
+        </div>
+        <!--Div de buscar por ciudad -->
+        <div class="ciudad-wrapper">
+            <div class="ciudad-icon-wrapper">
+
+                <img class="esteto-icon" src="./assets/img/ciudad1.svg" alt="ciudad">
+
+            </div>
+            <div class="ciudad-search">
+                <input id="city" type="search" class="ciudad" placeholder="Ciudad">
+            </div>
+            <div class="lens-icon-wrapper">
+                <img id="btn-search" class="lens-icon" src="./assets/img/lens.svg" alt="buscar">
+            </div>
+        </div>
+    </div> 
+     <!--*Aqui empieza el buscador Mobile  -->
+     <div class="m-search-container">
+        <div class="m-especialidad-wrapper">
+            <div class="m-esteto-icon-wrapper">
+            <img class="m-esteto-icon" src="/assets/img/esteto.svg" alt="estetoscopio">
+            </div>
+            <div class="m-especialidad-search">
+            <input type="search" class="m-buscador" placeholder="Especialidad">
+            </div>
+        </div>
+        <div class="m-ciudad-wrapper">
+            <div class="m-ciudad-icon-wrapper">
+                <img class="m-ciudad-icon" src="/assets/img/ciudad1.svg" alt="ciudad">
+            </div>
+            <div class="m-ciudad-search">
+                <input type="search" class="ciudad" placeholder="Ciudad">
+            </div>
+            <div class="m-lens-icon-wrapper">
+                <img id="btn-search-mobile" class="m-lens-icon" src="/assets/img/lens.svg" alt="buscar">
+            </div>               
+        </div>
+    </div>
+</div>
+<!--*Aqui termina el buscador Mobile  -->
+</section>
+        <!--/search-container-->
+
+<section>
+
+        </div>
+        <!-- Cards -->
+</section>
+
+</main>
+        <!--footer-->
+        <footer class="bg-white" id="footer-1"></footer>
+        <!--footer-->
+
+        <!--Menu hamburguesa-->
+        <div id="hamburger-menu" class="main_hamburger_menu_container"></div>
+        <!--/Menu hamburguesa-->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="./assets/js/main.js" type="module"></script>
+    </body>
+</html>

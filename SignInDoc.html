@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Doctorfy</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com"> <!--google fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!--google fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@200;400;600;700&display=swap" rel="stylesheet"><!--google fonts-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" /><!--bootstrap-->
+        <link rel="stylesheet" href="./assets/css/NavBarStyle.css" /> <!--estilos header y footer--> <!--estilos generales-->
+        <link rel="icon" type="image/jpg" href="./assets/img/icono2.png"> <!--favicon-->
+        <link rel="stylesheet" href="./assets/css/SignInDoc.css" /> <!--estilos sign in doctor-->
+    </head>
+    <body>
+        <!--header-->
+        <header id="header-wrapper" class="bg-white"></header>
+        <!--/header-->
+
+        <!--main-->
+        <main>
+            <section id="Formulario-Section">
+                <div class="container-form">
+                    <div class="column-wrapper">
+                        <div class="cont-izq">
+                            <img id="form-imagen" src="./assets/img/Img-registro-doc.jpg" alt= />
+                        </div>
+                        <div class="cont-der">
+                            <div id="wrapper-form">
+                                <h1 id="titulo-form">Regístrate con nosotros</h1> 
+                                <br>             
+                                <form id="formulario" class="formulario">
+                                    <!-- Aqui comienza el formulario -->
+                                    <div class="formulario__grupo" id="grupo__nombre">
+                                        <label for="nombre" class="label-font">Nombre(s)</label>
+                                            <div class="formulario__grupo-input">
+                                            <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Ej. Shaun">
+                                            </div>
+                                            <p class="form-control-error">Ingresa tu nombre.</p>
+                                    </div>
+                                    <div class="input-groupp">
+                                    <div class="formulario__grupo" id="grupo__apellido1">
+                                      <label for="apellido1" class="label-font">Primer apellido</label>
+                                          <div class="formulario__grupo-input">
+                                          <input type="text" class="form-control" name="aPaterno" id="apellido1" placeholder="Murphy">
+                                          </div>
+                                          <p class="form-control-error">Ingresa tu primer apellido.</p>
+                                  </div>
+
+                                  <div class="formulario__grupo" id="grupo__apellido2">
+                                    <label for="apellido2" class="label-font">Segundo apellido</label>
+                                        <div class="formulario__grupo-input">
+                                        <input type="text" class="form-control" name="aMaterno" id="apellido2" placeholder="NA">
+                                        </div>
+                                        <p class="form-control-error">Ingresa tu segundo apellido.</p>
+                                </div>
+                                    </div>
+                                <div class="formulario__grupo" id="grupo__correo">
+                                  <label for="correo" class="label-font">Correo electrónico</label>
+                                      <div class="formulario__grupo-input">
+                                      <input type="text" class="form-control" name="correo" id="correo" placeholder="Ej. correo@gmail.com">
+                                      </div>
+                                      <p class="form-control-error">El correo solo puede contener letras, números, puntos y guiones.</p>
+                              </div>
+
+                              <div class="input-groupp">
+                              <div class="formulario__grupo" id="grupo__password">
+                                <label for="password" class="label-font">Contraseña</label>
+                                    <div class="formulario__grupo-input">
+                                    <input type="password" class="form-control" name="password" id="password" placeholder="********">
+                                    </div>
+                                    <p class="form-control-error">La contraseña debe tener de 4 a 12 dígitos.</p>
+                            </div>
+                    
+                            <div class="formulario__grupo" id="grupo__password2">
+                              <label for="password2" class="label-font">Confirma</label>
+                                  <div class="formulario__grupo-input">
+
+                                  <input data-ignore-value="true" type="password" class="form-control" name="password2" id="password2" placeholder="********">
+
+                                  </div>
+                                  <p class="form-control-error">Ambas contraseñas deben ser iguales.</p>
+                                </div>
+                              </div>
+                            
+                                <div class="formulario__grupo">
+                                <label for="especialidad" class="label-font">Elige tu especialidad</label><br>
+                                <div class=""> 
+                                <select name="especialidad" class="form-control"><option value="">-</option><option value="1">Acupuntor</option><option value="2">Alergólogo</option><option value="89">Algólogo</option><option value="37">Analista clínico</option><option value="3">Anatomopatólogo</option><option value="4">Anestesiólogo</option><option value="5">Angiólogo</option><option value="6">Audiólogo</option><option value="7">Cardiólogo</option><option value="8">Cardiólogo pediátrico</option><option value="103">Cirujano bariatra</option><option value="98">Cirujano cardiovascular</option><option value="9">Cirujano cardiovascular y torácico</option><option value="96">Cirujano cardiovascular y torácico pediátrico</option><option value="10">Cirujano de la mano</option><option value="11">Cirujano estético y cosmético</option><option value="12">Cirujano general</option><option value="13">Cirujano maxilofacial</option><option value="14">Cirujano oncólogo</option><option value="15">Cirujano pediátrico</option><option value="16">Cirujano plástico</option><option value="99">Cirujano torácico</option><option value="107">Cirujano vascular</option><option value="63">Dentista - Odontólogo</option><option value="17">Dermatólogo</option><option value="18">Dermatólogo pediátrico</option><option value="19">Diabetólogo</option><option value="20">Endocrinólogo</option><option value="21">Endocrinólogo pediátrico</option><option value="22">Endoscopista</option><option value="23">Enfermero</option><option value="101">Epidemiólogo</option><option value="108">Especialidad en Medicina del Enfermo Pediátrico en Estado Crítico</option><option value="40">Especialista en Medicina Crítica y Terapia Intensiva</option><option value="41">Especialista en Medicina del Deporte</option><option value="42">Especialista en Medicina del Trabajo</option><option value="46">Especialista en Medicina Integrada</option><option value="48">Especialista en Medicina Nuclear</option><option value="49">Especialista en Medicina Preventiva</option><option value="62">Especialista en Obesidad y Delgadez</option><option value="85">Especialista en Rehabilitación y Medicina Física</option><option value="86">Especialista en Retina Médica y Quirúrgica</option><option value="24">Fisioterapeuta</option><option value="104">Foniatra</option><option value="25">Gastroenterólogo</option><option value="26">Gastroenterólogo pediátrico</option><option value="27">Genetista</option><option value="28">Geriatra</option><option value="111">gerontologo</option><option value="30">Ginecólogo</option><option value="29">Ginecólogo oncológico</option><option value="31">Hematólogo</option><option value="32">Hematólogo pediatra</option><option value="33">Homeópata</option><option value="34">Infectólogo</option><option value="35">Infectólogo pediatra</option><option value="36">Inmunólogo</option><option value="47">Internista</option><option value="38">Logopeda</option><option value="44">Médico de familia</option><option value="43">Médico estético</option><option value="45">Médico general</option><option value="50">Naturista</option><option value="51">Nefrólogo</option><option value="52">Nefrólogo pediatra</option><option value="53">Neonatólogo</option><option value="54">Neumólogo</option><option value="55">Neumólogo pediatra</option><option value="56">Neurocirujano</option><option value="57">Neurofisiólogo</option><option value="58">Neurólogo</option><option value="59">Neurólogo pediatra</option><option value="60">Nutricionista</option><option value="61">Nutriólogo clínico</option><option value="102">Odontólogo pediatra</option><option value="64">Oftalmólogo</option><option value="65">Oftalmólogo pediátrico</option><option value="66">Oncólogo médico</option><option value="67">Oncólogo pediátrico</option><option value="68">Optometrista</option><option value="69">Ortopedista</option><option value="70">Ortopedista infantil</option><option value="71">Otorrinolaringólogo</option><option value="105">Otorrinolaringólogo Pediátrico</option><option value="109">Patólogo Bucal</option><option value="72">Patólogo clínico</option><option value="73">Pediatra</option><option value="74">Podiatra</option><option value="75">Podólogo</option><option value="76">Proctólogo</option><option value="77">Psicoanalista</option><option value="78">Psicólogo</option><option value="79">Psicopedagogo</option><option value="80">Psiquiatra</option><option value="81">Psiquiatra infantil</option><option value="82">Quiropráctico</option><option value="100">Radio Oncólogo</option><option value="83">Radiólogo</option><option value="84">Radioterapeuta</option><option value="87">Reumatólogo</option><option value="94">Reumatólogo pediátrico</option><option value="88">Sexólogo</option><option value="39">Terapeuta complementario</option><option value="90">Terapeuta ocupacional</option><option value="91">Traumatólogo</option><option value="92">Urgenciólogo</option><option value="93">Urólogo</option><option value="97">Urólogo pediátrico</option></select><br>
+                                </div>
+                                </div>
+                        
+
+                            <div class="formulario__grupo" id="grupo__terminos">
+                              <label class="formulario__label">
+                                <input data-ignore-value="true" class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                                Acepto los <a href="TyC.html">términos y condiciones</a>
+                              </label>
+                            </div>
+
+                            <div class="formulario__mensaje" id="formulario__mensaje">
+                              <p> <b>Error:</b> Favor de llenar el formulario correctamente. </p>
+                          </div>
+
+                          <div class="formulario__grupo formulario__grupo-btn-enviar">
+                            <form action="formulario.html">
+                              <button  class="boton-formulario" id="botonFormulario" >Siguiente</button>
+                            </form>
+                              <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">¡Formulario enviado exitosamente!</p>
+                              <p>Crea una cuenta <a href="SignInPatient.html">como paciente</a></p>
+                            
+                          </div>
+                        </form>
+                  </div>
+                </div>
+                </div>
+          </div>
+        </section>
+      </main>
+      <!--main-->
+        <!--main-->
+
+        <!--footer-->
+        <footer class="bg-white" id="footer-1"></footer>
+        <!--footer-->
+
+        <!--Menu hamburguesa-->
+        <div id="hamburger-menu" class="main_hamburger_menu_container"></div>
+        <!--/Menu hamburguesa-->
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="./assets/js/SignInDoc.js" type="module"></script>
+        <script src="./assets/js/main.js" type="module"></script>
+    </body>
+</html>
