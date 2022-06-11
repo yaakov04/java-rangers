@@ -18,7 +18,7 @@ footer.innerHTML= `<footer class="bg-white">
     <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
       <h6 class="tituloFooter">AYUDA</h6>
       <ul class="list-unstyled mb-0">
-        <li class="mb-2" class"text-muted" style="color: #6C757D;">Registrate:</li>
+        <li class="mb-2" class"text-muted" style="color: #6C757D;">Regístrate:</li>
         <li class="mb-2"><a href="SignInPatient.html" class="text-muted">Como paciente</a></li>
         <li class="mb-2"><a href="SignInDoc.html" class="text-muted">Como doctor</a></li>
       </ul>
@@ -26,7 +26,7 @@ footer.innerHTML= `<footer class="bg-white">
     <div class="col-lg-3 col-md-6 mb-lg-0">
         <h6 class="tituloFooter">CONTACTO</h6>
         <ul class="list-unstyled mb-0">
-          <li class="mb-2"><a href="ContactUs.html" class="text-muted">Escribenos</a></li>
+          <li class="mb-2"><a href="ContactUs.html" class="text-muted">Escríbenos</a></li>
           <li class="mb-2"><a href="https://www.facebook.com/Doctorfy-110120325047882" class="text-muted" Target="_blank">Facebook</a></li>
 
          
