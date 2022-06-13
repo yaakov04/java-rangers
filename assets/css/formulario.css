@@ -1,3 +1,7 @@
+ .formulario-container{
+   padding-top: 40px;
+ }
+ 
  .bs-accordion-active-color:after{
    color: #79DAE8 !important;
  }
@@ -54,7 +58,9 @@
 }
 
 
-
+.form-select{
+  color:#6c757d !important;
+}
 
 
 
