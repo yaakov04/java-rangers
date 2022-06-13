@@ -12,7 +12,7 @@ footer.innerHTML= `<footer class="bg-white">
       <h6 class="tituloFooter">SOBRE DOCTORFY</h6>
       <ul class="list-unstyled mb-0">
         <li class="mb-2"><a href="AboutUs.html" class="text-muted">Quiénes somos</a></li>
-        <li class="mb-2"><a href="#" class="text-muted">FAQ</a></li>
+        <li class="mb-2"><a href="TyC.html" class="text-muted">Términos y condiciones</a></li>
       </ul>
     </div>
     <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
