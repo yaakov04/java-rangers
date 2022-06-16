@@ -40,7 +40,7 @@ const Header = function(){
                             </div>
             
                             <div class="dropdown">
-                                <button class="btn_drop" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Soy Doctor/a</button>
+                                <button class="btn_drop" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Soy Doctor</button>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                     <button class="dropdown-item" data-toggle="modal" data-target="#loginDoctor">Ingresar</button>
                                     <a class="dropdown-item" href="SignInDoc.html">Registrarse</a>
