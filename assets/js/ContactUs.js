@@ -1,5 +1,5 @@
-const formulario = document.getElementById('formulario'); //Se define una constante para poder acceder al formulario
-const inputs = document.querySelectorAll('#formulario input'); // Se define una constante para poder acceder a todos los inputs del formulario
+const form = document.getElementById('form'); //Se define una constante para poder acceder al formulario
+const inputs = document.querySelectorAll('#form input'); // Se define una constante para poder acceder a todos los inputs del formulario
 
 const expresiones = { //expresiones regulares
 	nombre: /^[a-zA-ZÀ-ÿ\s]{2,40}$/, // Letras y espacios, pueden llevar acentos. De 4 a 40 caracteres 
@@ -78,12 +78,12 @@ inputs.forEach((input) => {
 	input.addEventListener('blur', validarFormulario);
 });
 
-formulario.addEventListener('submit', (e) => {
+form.addEventListener('submit', (e) => {
 	e.preventDefault();
 
-	
+
 	if(campos.nombre && campos.correo && campos.telefono){
-		formulario.reset();
+		form.reset();
 		document.getElementById('formulario__mensaje').classList.remove('formulario__mensaje-activo');
 		document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
 		setTimeout(() => {
@@ -93,5 +93,7 @@ formulario.addEventListener('submit', (e) => {
 		document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
 	}
 });
+
+
 
 
