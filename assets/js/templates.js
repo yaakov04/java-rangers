@@ -14,7 +14,7 @@ const drCardContainer = document.querySelector('#cardCreate'); // Selecciono el 
 const modalLoginPacienteHtml= document.querySelector('#modal-container-paciente');
 const modalLoginDoctorteHtml= document.querySelector('#modal-container-doctor');
 
-const templates = function (){
+const templates = async function (){
     // Pregunto si existe el contenedor en el html
     if (headerHtml) {
         // Si existe el contenedor se inyecta el template dentro del contenedor
@@ -31,7 +31,7 @@ const templates = function (){
 
     // Nos aseguramos que exista el lugar en el html en donde se va a inyectar la grilla
     if (drCardContainer) {
-        drCardContainer.appendChild(GrillaDrCards()); // inyecto la grilla
+        drCardContainer.appendChild( await GrillaDrCards()); // inyecto la grilla
     }
 
     if(modalLoginPacienteHtml){

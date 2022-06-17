@@ -3,6 +3,7 @@ import templates from "./templates.js";
 import hamburgerMenu from "./libs/hamburgerMenu.js";
 import search from "./libs/search.js";
 import loginDoctor from "./login.js";
+import profile from "./libs/profileDoctor.js"
 
 //Ejecuta el JS despues de que se haya cargado todo el DOM
 document.addEventListener("DOMContentLoaded", () => {
@@ -11,5 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
     hamburgerMenu(); //Implementa la logica del menu de hamburguesa
     search();
     loginDoctor();
+    if (document.querySelector('.Portada-profile')) {
+        profile();
+    }
 
 });

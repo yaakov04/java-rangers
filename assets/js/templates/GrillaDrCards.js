@@ -1,11 +1,37 @@
 import DoctorCards from "./DrCards.js"; // es importa el card para renderizarlos despues
-import doctores from "../libs/doctores.js"; //informacion de prueba para alimentar las cards
+import d from "../libs/doctores.js"; //informacion de prueba para alimentar las cards
+
+const getDoctors = async (ciudad, query) => {
+    const url = `http://localhost:8080/api/doctores/query?${ciudad ?'ciudad='+ciudad : ''}${query ?'&query='+query:''}`;
+
+
+    console.log(url)
+
+    try {
+        const respuesta = await fetch(url);
+        const data = await respuesta.json();
+        return data;
+    } catch (error) {
+        console.log("Fetch Error", error);
+    }
+}
 
 // Este template va a renderizar una grilla o grid de cards
-const GrillaDrCards = function(){
+const GrillaDrCards = async function(){
     const grillaDrCards = document.createElement('div'); //nodo que va a ser el contenedor de la grilla, a este nodo se le debe aplicar flexbox o grid
 
     grillaDrCards.classList.add('grid-container');
+
+    const url_string = window.location.href; //window.location.href
+    const url = new URL(url_string);
+    const ciudad = url.searchParams.get("city");
+    const query = url.searchParams.get("query");
+
+    //console.log(c);
+
+    const doctores = await getDoctors(ciudad, query);
+
+    console.log(doctores)
 
     //Por cada elemento en array de doctores se va crear un card nuevo y se va a inyectar en el nodo 'grillaDrCards'
     doctores.forEach(doctor => {

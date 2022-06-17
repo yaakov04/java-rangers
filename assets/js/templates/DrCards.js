@@ -2,19 +2,19 @@
 const DoctorCards = function(doctor){ // En vez de que reciba varios parametros, mejor que reciba un objeto de tipo doctor con la informacion
 
     //*Calificacion del doctor en estrellas
-    let parteDecimal=doctor.rating%1;
+    let parteDecimal=doctor.promedio%1;
     let star="<img src=\"./assets/img/Star.svg\">";
     let StarRating = null;
     //Muestra las estrellas completas de la calificacion segun el número de calificacion.
-    if (doctor.rating>0&&doctor.rating<=1.75)
+    if (doctor.promedio>0&&doctor.promedio<=1.75)
         {StarRating= star;}
-        else if (doctor.rating>1.75&&doctor.rating<=2.75)
+        else if (doctor.promedio>1.75&&doctor.promedio<=2.75)
             {StarRating=star+star;}
-        else if (doctor.rating>2.75&&doctor.rating<=3.75)
+        else if (doctor.promedio>2.75&&doctor.promedio<=3.75)
             {StarRating=star+star+star;}
-        else if (doctor.rating>3.75&&doctor.rating<=4.75)
+        else if (doctor.promedio>3.75&&doctor.promedio<=4.75)
             {StarRating=star+star+star+star;}
-        else if (doctor.rating>4.75&&doctor.rating<=5)
+        else if (doctor.promedio>4.75&&doctor.promedio<=5)
             {StarRating=star+star+star+star+star;}
     else{StarRating="";}
     //Muestra una media estrella si la parte decimal del numero es mayor a 0.25, y menor a 0.75 ya que en ese punto se creará otra estrella completa por promedio.
@@ -27,16 +27,16 @@ const DoctorCards = function(doctor){ // En vez de que reciba varios parametros,
     containerCard.innerHTML=`
     <div class="card">
         <div class="imgContainer">
-            <img src="${ doctor.img }" class="card-img-top" alt="Foto de perfil del Dr. ${doctor.name}">
+            <img src="./assets/img/profile-pictures/${ doctor.fotoPerfil }" class="card-img-top" alt="Foto de perfil del Dr. ${doctor.nombre}">
             <div class="drData">
-                <div class="drName"> ${ doctor.name }</div>
-                <div class="drCity">${ doctor.city }</div>
+                <div class="drName"> ${ doctor.nombre } ${doctor.apellidoPaterno}</div>
+                <div class="drCity">${ doctor.ciudad }</div>
                 <div id="starRate">${ StarRating }</div>
             </div>
         </div>
         <div class="card-body">
             <p class="especialidad">${ doctor.especialidad }</p>
-            <p class="descripcion">${ doctor.descripcion }</p>
+            <p class="descripcion">${ doctor.descripcionCorta }</p>
             <a href="#" class="btnAgendarCita">Agendar Cita</a>
         </div>
     </div>`;

@@ -75,9 +75,15 @@ const SignInDoctor = async function(form){
    }
 
    if (response.StatusCode === 'Ok') {
-    alert('El usuario se registro correctamente');
+    
     //
-        
+    const sesion = {
+        login: true,
+        idUser: response.idUser
+      }  
+      localStorage.setItem('sesion',JSON.stringify(sesion))
+
+      window.location.href = "formulario.html"
     //
 }
 
