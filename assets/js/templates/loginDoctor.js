@@ -18,12 +18,12 @@ const LoginDoctor = function(){
                     <form>
                     <div class="form-group">
                       <label for="exampleInputEmail1">Correo electrónico</label>
-                      <input type="email" class="formControl" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <input type="email" class="formControl" id="correo" aria-describedby="emailHelp">
                       <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
                     </div>
                     <div class="form-group">
                       <label for="exampleInputPassword1">Contraseña</label>
-                      <input type="password" class="formControl" id="exampleInputPassword1">
+                      <input type="password" class="formControl" id="password">
                     </div>
                     <div class="form-group form-check">
                       <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -35,7 +35,7 @@ const LoginDoctor = function(){
 
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" id="botonModal">Entrar
+                        <button data-action="login" type="button" class="btn btn-primary" id="botonModal">Entrar
                         
                         
                         

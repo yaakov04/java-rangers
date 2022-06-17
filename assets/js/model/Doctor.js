@@ -1,8 +1,19 @@
 class Doctor {
-    id; //Este id es solo para pruebas, el id real debe ser asignado por el motor de BD
+    //id; //Este id es solo para pruebas, el id real debe ser asignado por el motor de BD
+/*
+    {
+       
+        "nombre": "Jose",
+        "apellidoPaterno": "Marti",
+        "apellidoMaterno": "Martinez",
+        "correo": "j@mail.com",
+        "password": "123456",
+        "especialidad": "Cardiología"
+        
+    }*/
     nombre; 
-    aPaterno;
-    aMaterno;
+    apellidoPaterno;
+    apellidoMaterno;
     estado;
     ciudad;
     colonia;
@@ -30,16 +41,17 @@ class Doctor {
     enfermedadesEspecialidad = [];  
 
     constructor (){
-        this.id = Math.random().toString(36).substr(2);
+        //this.id = Math.random().toString(36).substr(2);
     }
 
+    
     signIn(doctor){
         if (doctor.especialidad) {
             this.especialidad = doctor.especialidad;
         }
         this.nombre = doctor.nombre;
-        this.aPaterno = doctor.aPaterno;
-        this.aMaterno = doctor.aMaterno;
+        this.apellidoPaterno = doctor.aPaterno;
+        this.apellidoMaterno = doctor.aMaterno;
         this.correo = doctor.correo;
         this.password = doctor.password;
     }
