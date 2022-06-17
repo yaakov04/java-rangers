@@ -100,6 +100,12 @@ body {
 }
 
 
+[type="search"] {
+    outline-offset: -2px;
+    -webkit-appearance: none;
+    outline: none;
+  }
+
 .buscador{
     width: 100%;
     border: solid;
@@ -327,10 +333,14 @@ body {
 
     #tittle-portada{
         font-size: 35px;
+        color: #FFFFFF;
+        text-shadow: 2px 4px 2px #474747;
     }
 
     #subtittle-portada{
         font-size: 25px;
+        color: #FFFFFF;
+        text-shadow: 1px 3px 2px #474747;
     }
 
 }
@@ -351,6 +361,18 @@ body {
 
     .m-search-container{
         margin-top: 20px;
+    }
+    
+    #tittle-portada{
+        font-size: 35px;
+        color: #000;
+        text-shadow: none;
+    }
+
+    #subtittle-portada{
+        font-size: 25px;
+        color: #000;
+        text-shadow: none;
     }
 
 }
