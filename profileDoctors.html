@@ -76,7 +76,7 @@
                                     <br>
                                     <h4 class="especialidad-description-uni"><b>Especialidad en <span id="especialidad"></span></b> por el
                                         <span id="espUni"></span></h4>
-                                    <h4 class="especialidad-description-uni"><b>Número de cédula:</b> 1218281</h4>
+                                    <h4 class="especialidad-description-uni"><b>Número de cédula:</b> <span id="cedulaEspecial">1218281</span></h4>
                                 </div>
                             </div>
                             <!--FIN PORTADA -->
@@ -90,18 +90,18 @@
                                     <div class="enfermedades-4">
                                         <div class="enfermedades1-2">
                                             <div class="items-enfermedades-wrapper">
-                                                <p class="items-enfermedades">Tendinitis</p>
+                                                <p id="enfermedad1" class="items-enfermedades">Tendinitis</p>
                                             </div>
                                             <div class="items-enfermedades-wrapper">
-                                                <p class="items-enfermedades">Hernia discales</p>
+                                                <p id="enfermedad2" class="items-enfermedades">Hernia discales</p>
                                             </div>
                                         </div class="items-enfermedades-wrapper">
                                         <div class="enfermedades3-4">
                                             <div class="items-enfermedades-wrapper">
-                                                <p class="items-enfermedades">Tendinitis</p>
+                                                <p id="enfermedad3" class="items-enfermedades">Tendinitis</p>
                                             </div>
                                             <div class="items-enfermedades-wrapper">
-                                                <p class="items-enfermedades">Hernia discales</p>
+                                                <p id="enfermedad4" class="items-enfermedades">Hernia discales</p>
                                             </div>
                                         </div>
                                     </div>
@@ -115,7 +115,7 @@
                                 <div>
                                     <h3 class="subtitle-profile">BIOGRAFÍA</h3>
                                     <div>
-                                       <p class="biografia-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis suscipit iusto vel velit labore hic, corrupti dolorum. Delectus eos ex cupiditate quibusdam magni, reprehenderit maiores rem, voluptate, placeat enim expedita.</p>     
+                                       <p id="biografia" class="biografia-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis suscipit iusto vel velit labore hic, corrupti dolorum. Delectus eos ex cupiditate quibusdam magni, reprehenderit maiores rem, voluptate, placeat enim expedita.</p>     
                                     </div>
                                 </div>
                             </div>
@@ -408,19 +408,16 @@
                               <div>
                                   <h3 class="subtitle-profile">CONTACTO</h3>
                                   <div>
-                                     <p class="biografia-text">
+                                     <p id="telefono" class="biografia-text">
                                       Tel: 553-553-7372
                                     </p> 
-                                    <p class="biografia-text">
-                                      www.misitioweb.com
-                                    </p>
-                                    <p class="biografia-text">
+                                    <p id="correo" class="biografia-text">
                                       dr_javier_mtz@gmail.com
                                     </p>
                                     <p class="biografia-text">
-                                      Calle Nueva vida #327,
-                                      colonia Esperanza C.P 25000
-                                      Monterrey Nuevo Leon.
+                                      Calle <span id="calle" >Nueva vida #327</span>, colonia  
+                                      <span id="colonia" >Esperanza</span> <br>
+                                      <span id="ciudad">Monterrey</span> <span id="estado" >Nuevo Leon</span>
                                     </p>
                                     <p class="biografia-text">
                                       Facebook
@@ -438,7 +435,9 @@
             </div>
         </Section>
 
-
+        <div class="boton-whats-wrapper">
+          <a id="whatsapp" href="https://api.whatsapp.com/send/?phone=5218446020458&text=Hola+necesito+m%C3%A1s+informaci%C3%B3n%2C+mi+nombre+es%3A&app_absent=0"><img class="boton-whats" src="./assets/img/whatsapp.svg" alt="whatsapp"></a>
+        </div>
 
 
 
