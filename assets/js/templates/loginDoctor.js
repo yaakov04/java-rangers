@@ -29,7 +29,7 @@ const LoginDoctor = function(){
                       <input type="checkbox" class="form-check-input" id="exampleCheck1">
                       <label class="form-check-label" for="exampleCheck1">Recordarme</label>
                     </div>
-                    <p><a href="#">¿Olvidaste tu contraseña?</a></p>
+                    
                     <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
                   </form>
 

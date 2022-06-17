@@ -63,9 +63,16 @@ const loginDoctor = async function() {
             console.log(response)
 
             if (response.StatusCode === 'Ok') {
-                alert('inicio de sesion correcto');
+                //alert('inicio de sesion correcto');
                 //
-                    
+
+                  const sesion = {
+                    login: true,
+                    idUser: response.idUser
+                  }  
+                  localStorage.setItem('sesion',JSON.stringify(sesion))
+
+                  window.location.href = "profileDoctors.html"
                 //
             }
 
