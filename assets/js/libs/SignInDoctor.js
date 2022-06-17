@@ -3,6 +3,26 @@ import getDoctorsFromLocalStorage from "./getDoctorsFromLocalStorage.js";
 import addDoctor from "./addDoctor.js";
 import saveOnLocalStorage from "./saveOnLocalStorage.js";
 
+const sendSignIn = async (signIn) => {
+    const url = `http://localhost:8080/api/usuario/signIn`;
+
+    const config = {
+        method: 'POST', // or 'PUT' 
+        headers: { // se agrega el header
+          'Content-Type': 'application/json', //tipo de contenido
+        },
+        body: JSON.stringify(signIn)
+      }
+
+    try {
+        const respuesta = await fetch(url, config);
+        const data = await respuesta.json();
+        return data;
+    } catch (error) {
+        console.log("Fetch Error", error);
+    }
+}
+
 const getValues = function(form){
     const nodeList = form.querySelectorAll('input'); // Regresa una lista de nodos
     const inputs = [... nodeList]; // lo convierto a un array
@@ -34,15 +54,38 @@ const getValues = function(form){
 }
 
 
-const SignInDoctor = function(form){
+const SignInDoctor = async function(form){
     // array de doctores
-    const doctores = getDoctorsFromLocalStorage();
+    //const doctores = getDoctorsFromLocalStorage();
 
     const doctor = new Doctor();
     doctor.signIn(getValues(form));
 
-    addDoctor(doctores, doctor);
-    saveOnLocalStorage(doctores);
+    console.log(doctor);
+
+    const response = await sendSignIn(doctor);
+
+    console.log(response);
+
+   if (response) {
+    if (response.status === 400 || response.status === 500) {
+        alert('El usuario ya existe');
+        return
+    }
+   }
+
+   if (response.StatusCode === 'Ok') {
+    alert('El usuario se registro correctamente');
+    //
+        
+    //
+}
+
+
+    console.log('login correcto')
+
+    //addDoctor(doctores, doctor);
+    //saveOnLocalStorage(doctores);
 }
 
 export default SignInDoctor;

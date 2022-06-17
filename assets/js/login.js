@@ -1,27 +1,81 @@
-import getDoctorsFromLocalStorage from "./libs/getDoctorsFromLocalStorage.js";
 
-var doctores = getDoctorsFromLocalStorage();
+const sendLogin = async (login) => {
+    const url = `http://localhost:8080/api/login/`;
 
-function loginDoc(e) {
- 
-    let correo = document.getElementById('correo').value; 
-    let password = document.getElementById('password').value; 
+    const config = {
+        method: 'POST', // or 'PUT' 
+        headers: { // se agrega el header
+          'Content-Type': 'application/json', //tipo de contenido
+        },
+        body: JSON.stringify(login)
+      }
 
-    const doctor = doctores.find(doctor => doctor.correo === correo);
-
-    if (doctor){
-        console.log(doctor);
-    } else {
-        console.log("no existe usuario", doctor);
+    try {
+        const respuesta = await fetch(url, config);
+        const data = await respuesta.json();
+        return data;
+    } catch (error) {
+        console.log("Fetch Error", error);
     }
+
+/*
+    fetch(URL_MAIN, { //URL del servicio a donde se hara el POST
+        method: 'POST', // or 'PUT' 
+        headers: { // se agrega el header
+          'Content-Type': 'application/json', //tipo de contenido
+        },
+        body: JSON.stringify(data), //se agrega el cuerpo del POST
+      })
+      .then(response => response.json()) //se obtiene la respuesta del servidor
+      .then(data => { //se obtiene el json
+        console.log('Success:', data); //se imprime el json
+      })
+      .catch((error) => { //si hay un error
+        console.error('Error:', error); //se imprime el error
+      });
+
+      
+
+*/
+      
+
+   
+
+};
+
+const loginDoctor = async function() {
+    
+    document.addEventListener('click', async (e)=>{
+        
+        if (e.target.getAttribute('data-action') === 'login') {
+            const btn = e.target;
+            const inputsNodeList = btn.parentElement.parentElement.querySelectorAll('input');
+            console.log(inputsNodeList);
+            const inputs = [... inputsNodeList];
+            const login = {}
+            inputs.forEach(input => {
+                login[input.id] = input.value;
+                console.log(input.id)
+            })
+
+            const response = await sendLogin(login);
+
+            console.log(response)
+
+            if (response.StatusCode === 'Ok') {
+                alert('inicio de sesion correcto');
+                //
+                    
+                //
+            }
+
+        }
+    })
+    
+
+    console.log('login')
 }
 
-const btnLoginDoc = document.getElementById('btn-login-doc');
-document.addEventListener("click",(e)=>{
-    if(e.target.id === 'btn-login-doc'){
-        e.preventDefault();
-        
-        //loginDoc(e);
-    }
-});
+export default loginDoctor;
+
 
