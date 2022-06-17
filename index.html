@@ -14,7 +14,42 @@
         <link rel="icon" type="image/jpg" href="./assets/img/icono2.png" /> <!--favicon-->
     </head>
     <body>
-        
+        <!-- loading -->
+        <div id="page">
+            <div id="phrase_box">
+            <svg width="100%" height="100%">
+              <defs>
+                <!--<style type="text/css">
+                  @font-face {
+                    font-family: "Proxima";
+                    src: url('');
+                  }
+                </style>-->
+                <mask id="mask" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse">
+                  <linearGradient id="linearGradient" gradientUnits="objectBoundingBox" x2="0" y2="1">
+                    <stop stop-color="white" stop-opacity="0" offset="0%"/>
+                    <stop stop-color="white" stop-opacity="1" offset="30%"/>
+                    <stop stop-color="white" stop-opacity="1" offset="70%"/>
+                    <stop stop-color="white" stop-opacity="0" offset="100%"/>
+                  </linearGradient>
+                  <rect width="100%" height="100%" fill="url(#linearGradient)"/>
+                </mask>
+              </defs>
+              <g width="100%" height="100%" style="mask: url(#mask);">
+                <g id="phrases"></g>
+              </g>
+            </svg>
+            </div>
+            <div id="footer">
+              <div id="logo"></div>
+              <img style="height: 20px;" src="./assets/img/logoDoc.svg" alt="logo doctor">
+            </div>
+          </div>
+    
+        <!-- /loading -->
+
+
+
         <!--header-->
         <header id="header-wrapper" class="bg-white"></header>
         <!--/header-->
@@ -110,5 +145,6 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script src="./assets/js/main.js" type="module"></script>
+        <script src="./assets/js/loading.js"></script>
     </body>
 </html>
